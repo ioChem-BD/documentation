@@ -22,18 +22,18 @@ Please consider reading the [Basic introduction to ioChem-BD software](/Basic_in
 
 ### Installation
 
-1. [System requirements](system_requirements.md)
-2. [Required steps](/Required_steps "wikilink") prior to installation 
-3. [Installation](/Installation "wikilink") procedure 
-4. [User and group creation](/User_and_group_generation "wikilink")
-5. Browse [publishing endpoints definition](/publishing_endpoints_definition "wikilink")
-6. [Post installation check steps](/Post_installation_check_steps "wikilink")
-7. Define [backup policy](/backup_policy "wikilink")
+1. [System requirements](/installation/system_requirements.md)
+2. [Required steps](/installation/Required_steps.md) prior to installation 
+3. [Installation](/installation/Installation.md) procedure 
+4. [User and group creation](/installation/User_and_group_generation.md)
+5. Browse [publishing endpoints definition](/installation/publishing_endpoints_definition.md)
+6. [Post installation check steps](/installation/Post_installation_check_steps.md)
+7. Define [backup policy](/installation/backup_policy.md)
 
 #### Other operations 
 
-* [Replace HTTPS certificate](/Replace_HTTPS_certificate "wikilink")
-* [Change hostname/port](/Change_hostname/port "wikilink")
+* [Replace HTTPS certificate](/installation/Replace_HTTPS_certificate.md)
+* Change hostname/port
 
 ### Usage
 
