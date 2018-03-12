@@ -22,7 +22,7 @@ Please consider reading the [Basic introduction to ioChem-BD software](/Basic_in
 
 ### Installation
 
-1. [System requirements](system_requirements.md)
+1. [System requirements](installation/system_requirements.md)
 2. [Required steps](Required_steps.md) prior to installation 
 3. [Installation](Installation.md) procedure 
 4. [User and group creation](/installation/User_and_group_generation.md)
