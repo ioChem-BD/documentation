@@ -2,18 +2,13 @@
 title: Required steps
 permalink: /Required_steps/
 ---
-
 The ioChem-BD installation procedure will ask for some configuration information that the sysadmin must provide in order to enable all the functionalities of the software.
 So please write down all these fields and keep them at hand during the installation process
 # Required information
 In this section we will list all fields that will be prompted for the user to fulfill, all accompanied at the end by a little description of its usage in the system.
 We define *Field name* column in the tables as an easy way to refer to these parameters during installation.
-
 ##Mail settings
-
-
 <span id="mail"></span> It is advised to create an email account at your institution for ioChem-BD software, otherwise you can use a personal email address as sender of all notifications.
-
 
 |Field name|Description|Sample values|
 |----------|-----------|-------------|
@@ -50,39 +45,15 @@ These fields will be used by ioChem-BD to define its database connection paramet
 |------------|-------------|---------------|
 | **database.host** | Hostname of postgresql server | localhost |
 | **database.port** | Postgresql port number | 5432 |
-| **database.username** | Postgresql username ([defined during installation process](/installation#createdatabaseuser "wikilink")) | iochembd |
+| **database.username** | Postgresql username ([defined during installation process](/installation/Installation.md#createdatabaseuser "wikilink")) | iochembd |
 | **database.password** | Postgresql password ([defined during installation process](/installation#createdatabaseuser "wikilink")) |          |
 
 ##Administrator account settings
 <span id="admin"></span> During the last steps of installation you will be prompted to generate an ioChem-BD administrator account, such account will be the one in charge of managing and configuring all the software package.
-For the sake of ioChem-BD's security it is advised that the administrator [creates a "non-admin" user account](/Structure_generation#useraccountgeneration "wikilink") if he/she wants to work with Create module as a normal user.
+For the sake of ioChem-BD's security it is advised that the administrator [creates a "non-admin" user account](/installation/Structure_generation#useraccountgeneration "wikilink") if he/she wants to work with Create module as a normal user.
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Field name</p></th>
-<th><p>Description</p></th>
-<th><p>Sample values</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>admin.email</strong></p></td>
-<td><p>Administrator email and also username inside the system</p></td>
-<td><p>iochem-bd@urv.cat<br />
-iochem-bd@iciq.es<br />
-username@institution.com</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>admin.password</strong></p></td>
-<td><p>Administration account password</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>admin.telephone</strong></p></td>
-<td><p>Contact phone that will appear on system errors and notifications</p></td>
-<td><p>+34 977-XXX-XXX</p></td>
-</tr>
-</tbody>
-</table>
-
+|Field name|Description|Sample values|
+|----------|-----------|-------------|
+|**admin.email**|Administrator email and also username inside the system|iochem-bd@urv.cat<br />iochem-bd@iciq.es<br/>username@institution.com|
+|**admin.password**|Administration account password||
+|**admin.telephone**|Contact phone that will appear on system errors and notifications|+34 977-XXX-XXX|
