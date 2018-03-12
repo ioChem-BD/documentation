@@ -80,12 +80,20 @@ postgres$ createdb -O iochembd "iochemCreateChemaxon"
 postgres$ createdb -O iochembd "iochemBrowse"
 ```
 
-Run the installation script and fill in the forms
--------------------------------------------------
-
+###Run the installation script and fill in the forms
 If we changed linux user to *root* or *postgres* we must now change back to *iochembd* user. Now we can execute the visual installer by moving inside *BASE_PATH* and executing *init.sh* script.
 
 ```console
 iochembd$ cd *BASEPATH*
 iochembd$ ./init.sh
 ```
+A form will appear showing that the installer has started. 
+![none|frame|Welcome form](/images/Install_step_1.png "wikilink") 
+
+The next one will display the e-mail parameters configuration, more info at [mail fields](/installation/Required_steps.md#mail "wikilink").
+There are two checkboxes that configure email to use encryption.
+
+  * with no encrypted email services (default port 25) we will set both options unchecked
+  * with SSL encryption (default port 465) we will check first option
+  * with STARTTLS (default port 587) we will check both options
+
