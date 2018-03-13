@@ -2,12 +2,13 @@
 title: Required steps
 permalink: /Required_steps/
 ---
+#Steps prior installation
 The ioChem-BD installation procedure will ask for some configuration information that the sysadmin must provide in order to enable all the functionalities of the software.
 So please write down all these fields and keep them at hand during the installation process
-# Required information
+## Required information
 In this section we will list all fields that will be prompted for the user to fulfill, all accompanied at the end by a little description of its usage in the system.
 We define *Field name* column in the tables as an easy way to refer to these parameters during installation.
-##Mail settings
+###Mail settings
 <span id="mail"></span> It is advised to create an email account at your institution for ioChem-BD software, otherwise you can use a personal email address as sender of all notifications.
 
 |Field name|Description|Sample values|
@@ -18,7 +19,7 @@ We define *Field name* column in the tables as an easy way to refer to these par
 |<strong>smtp.mail.username</strong>|(Optional) If mail server requires authentication, set email account username||
 |<strong>smtp.mail.password</strong>|(Optional) If mail server requires authentication, set email account password||
 
-##Certificate fields
+###Certificate fields
 <span id="certificate"></span> ioChem-BD software should run on a web server that must be publicly accessible. This will not only allow its users to access it from anywhere but will also be used to interconnect Browse modules from different institutions to build a bigger data repository of theoretical chemistry results. So it must be accessible as a domain or as part of a subdomain of the destination institution.
 
 | Field name | Description | Sample values |
@@ -38,7 +39,7 @@ All communications inside this software, shell client &lt;-&gt; modules , module
 | **cert.state** | State/Province or your organization | Catalonia - Spain<br/>France |
 | **cert.country.code** | Country code (two characters, [check it here](http://www.nationsonline.org/oneworld/country_code_list.htm)) | ES<br/>FR |
 
-##Database settings
+###Database settings
 These fields will be used by ioChem-BD to define its database connection parameters.
 
 | Field name | Description | Sample values |
@@ -48,7 +49,7 @@ These fields will be used by ioChem-BD to define its database connection paramet
 | **database.username** | Postgresql username ([defined during installation process](/installation/Installation.md#createdatabaseuser "wikilink")) | iochembd |
 | **database.password** | Postgresql password ([defined during installation process](/installation#createdatabaseuser "wikilink")) |          |
 
-##Administrator account settings
+###Administrator account settings
 <span id="admin"></span> During the last steps of installation you will be prompted to generate an ioChem-BD administrator account, such account will be the one in charge of managing and configuring all the software package.
 For the sake of ioChem-BD's security it is advised that the administrator [creates a "non-admin" user account](/installation/Structure_generation#useraccountgeneration "wikilink") if he/she wants to work with Create module as a normal user.
 

@@ -8,7 +8,7 @@
 
 ## Installation
 
-* [Previous required steps](installation/required_steps.md)
+* [Steps prior installation](installation/required_steps.md)
 * [Installation procedure](installation/installation.md)
   * [Users and groups creation](installation/user-and-group-generation.md)
   * [Publishing endpoints definition](installation/publishing-endpoints-definition.md)
