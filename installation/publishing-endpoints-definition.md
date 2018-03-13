@@ -1,16 +1,10 @@
----
-title: Publishing endpoints definition
-permalink: /Publishing_endpoints_definition/
----
-
 Once our users and groups are generated, we must consider building the entity hierarchy on the Browse module to store all published elements coming from the Create module.
-As we explained on [Basic introduction to ioChem-BD software](/Basic_introduction_to_ioChem-BD_software "wikilink") page, the Create module will be used to work with calculations coming from HPC clusters. On this module we will be able to read a HTML5 summary of the most important calculations fields, their geometry and perform searches, generate reports and so on.
+As we explained on   [Basic introduction to ioChem-BD software](/Basic_introduction_to_ioChem-BD_software "wikilink") page, the Create module will be used to work with calculations coming from HPC clusters. On this module we will be able to read a HTML5 summary of the most important calculations fields, their geometry and perform searches, generate reports and so on.
 All this work is done privately inside the Create module but it can be published into the Browse module to share your calculations with the rest of the world. This process is done by publishing Create projects and calculations into Browse, but that raises a question: where to publish on Browse module? So that is the reason why it is necessary to generate a publishing hierarchy on the Browse model to hold all these new calculations and projects.
 The hierarchy inside Browse is really up to administrator's choice and needs. Here are some example of this organization:
 
 -   a top community with your institution's name, then inside it, their research groups community and inside them, its researchers community. Here we expect every researcher to publish inside his/her named community:
 
-<!-- -->
 
     Institute of Chemical Research of Catalonia
     ├── Carles Bo group
@@ -32,7 +26,6 @@ The hierarchy inside Browse is really up to administrator's choice and needs. He
 
 -   or rather create multiple top communities per research group and inside them each researcher's community
 
-<!-- -->
 
     Carles Bo group
     ├── Bandeira, Nuno
@@ -53,7 +46,7 @@ The hierarchy inside Browse is really up to administrator's choice and needs. He
 
 -   or even one top community per researcher (no grouping per research group)
 
-<!-- -->
+
 
     .
     ├── Bandeira, Nuno
@@ -72,7 +65,7 @@ The hierarchy inside Browse is really up to administrator's choice and needs. He
 
 -   or only create top communities per research group and no subcommunities at all, then all group reseachers will publish directly into his/her group community, grouping all calculations inside it.
 
-<!-- -->
+
 
     Carles Bo group
     Feliu Maseras group
