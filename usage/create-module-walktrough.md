@@ -14,9 +14,9 @@ The default operation flow inside the Create module starts by navigating / brows
 ##Navigation frame
 This frame is the entry point of all major functionalities of the Create module, and will allow us to change the current operative mode to
 
-   *   Navigation,
-   *   Search and
-   *   Report generation.
+   * Navigation,
+   * Search and
+   * Report generation.
 
 To switch between modes, the user only has to click on each tab: 
 ![Mode switch tabs](/images/CreateNavigationTabs.png)
@@ -78,6 +78,7 @@ Calculations have the following actions:
    * View results
    * Download
    * RAW CML
+   
 ### 3D structure
 This action displays the calculation's molecular structure, in the case of optimization calculations it will show their final geometry.
 We use JSmol (Javascript version of Jmol) to display such structures (and their cells in the case of crystals).

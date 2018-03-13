@@ -20,9 +20,9 @@
   * [Purchase new CA certificate ](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
     * [Validate domain owner](other-operations/validate-domain-owner.md)
   * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
-* [Replace using a CA certificate](other-operations/replace-https-certificate-using-CA-certificate.md)
 
 ## Usage
 
 * [Create module walktrough](usage/create-module-walktrough.md)
+* [Uploading content](usage/uploading-content-to-create.md)
 
