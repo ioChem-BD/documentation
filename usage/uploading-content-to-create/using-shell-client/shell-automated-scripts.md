@@ -401,7 +401,7 @@ Restrictions:
  INPUT_FILE_EXTENSION=in
  OUTPUT_FILE_EXTENSION=out
  . start-rep-shell                         # <--- Please append full path to start-rep-shell command
-  for folder in $(find  pwd -type d); do 
+  for folder in $(find  `pwd` -type d); do 
      echo "Processing folder :" $folder    
      for inputfile in $(find  $folder -maxdepth 1  -name "*.$INPUT_FILE_EXTENSION" -printf "%f\n"); do
          filename=$(echo $inputfile | sed "s/\.$INPUT_FILE_EXTENSION//")
