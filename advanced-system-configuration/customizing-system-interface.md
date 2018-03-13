@@ -1,4 +1,4 @@
-#Customizing system interface
+#Customizing user interface
 The ioChem-BD administrator account can easily customize Browse and Create module, so new visitors will get extra information about the instance they are visiting.
 The most important customizable sections are:
 

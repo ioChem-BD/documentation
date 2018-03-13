@@ -29,7 +29,7 @@
 
 ## Advanced system configuration
 
-* [Customizing system interface](advanced-system-configuration/customizing-system-interface.md)
+* [Customizing user interface](advanced-system-configuration/customizing-system-interface.md)
 * [Replace HTTPS certificate](other-operations/replace-https-certificate.md)
   * [With existing certificate](other-operations/replace-https-certificate/with-existing-certificate.md)
   * [Purchase new CA certificate ](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
