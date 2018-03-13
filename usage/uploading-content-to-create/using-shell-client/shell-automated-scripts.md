@@ -25,7 +25,7 @@ If parameters **-i** and **-o** are not set, it will look for *input.in* and *ou
 ```
 If parameters **-n** and **-d** are not defined, the loadadf script will use the parent folder's name as calculation name and description.
 If a parameter value contains multiple words and blank spaces (like description), they must be enclosed inside double quotes.
-####Examples 
+#####Examples 
 Upload calculation *a-pw12.opt* using *a-pw12.opt.in* and *a-pw12.opt.in* files
 ```console
     $ loadadf -i a-pw12.opt.in -o a-pw12.opt.out -n "a-pw12 optimization" -d "Optimization a-pw12"
@@ -89,7 +89,7 @@ On calculations that generate multiple output files like dscf, escf, we can uplo
     $ loadturbo -i control -o dscf.out -o escf.out
 ```
 
-### Examples
+##### Examples
 Upload calculation *flourophenol* using *control*. *job.last*, *energy*, *basis* and *coord* files. Set name as *flourophenol*.
 ```control
     $ loadturbo -i control -o job.last  -n "flourophenol" -d "Population analysis" -oe energy -ob basis -oc coord
@@ -122,33 +122,31 @@ Loads a VASP calculation into the Create module, it can be used standalone as ot
 | -neb          | Upload Nudged Elastic Band calculation, see more at [Uploading NEB/DIM calculations section](/#uploading_NEB_DIM_calculations "wikilink") |
 | -dim          | Upload Dimmer calculation, see more at [Uploading NEB/DIM calculations section](/#uploading_NEB_DIM_calculations "wikilink")              |
 
-### Examples
+##### Examples
 
 Uploads a calculation and sets identical name and description as the parent folder. It will capture INCAR and OUTCAR files by default
-
-   $ loadvasp
-
+```control
+   $ loadvasp
+```
 Automatically generates parent folder structure and uploads calculation and sets identical name and description as the parent folder. It will capture INCAR and OUTCAR files by default, and will attach report.pdf file to calculation.
-
+```control
    $ loadvasp -a report.pdf --auto
-
+```
 Uploads calculation and associates its *KPOINTS* and *DOSCAR* files, sets name and description to *opt1*. It will capture *INCAR* and *OUTCAR* files by default
-
+```control
    $ loadvasp -n opt1 -d opt1 -kp KPOINTS -dc DOSCAR
-
+```
 Upload calculation set name and description to *opt2*. Will capture INCAR2 and OUTCAR2 files, because we set *-i* and *-o* parameters.
-
+```control
    $ loadvasp -i INCAR2 -o OUTCAR2 -n opt2 -d opt2 -kp KPOINTS -dc DOSCAR
+```
 
 <span id="uploading_NEB_DIM_calculations"></span>
-
 ### Uploading VASP NEB/DIM calculation
-
 #### NEB
-
 The nudged elastic band (NEB) is a method for finding saddle points and minimum energy paths between known reactants and products. The method works by optimizing a number of intermediate images along the reaction path.[1](http://theory.cm.utexas.edu/vtsttools/neb.html)
 This kind of calculation generates multiple output files (images) inside a collection of numbered subfolders. To upload this kind of calculations we will set **-neb** parameter on base folder. loadvasp script will expect at last this file structure, it will iterate all XX folders and concatenate all outcar files.
-
+```control
    .
    ├── 00
    │   └── OUTCAR
@@ -165,17 +163,17 @@ This kind of calculation generates multiple output files (images) inside a colle
    ├── 06
    │   └── OUTCAR
    └── INCAR
-
+```
 Example of a NEB calculation upload:
 Upload NEB, attach *KPOINTS* file information and set *NEB-1* as name and description.
-
+```control
     $ loadvasp -neb -kp KPOINTS -n NEB-1-2 -d NEB-1-2
+```
 
 #### DIM
-
 The dimer method is one of the min-mode following methods that allows the user to start from any initial configuration and search for a nearby saddle point. This method can also be used to start from a minimum basin and search in random directions for saddle points.[2](http://theory.cm.utexas.edu/vtsttools/dimer.html)
 We can just upload calculation as a normal single calculation or we can use *-dim* parameter if we already have initial and final state calculations, so we must set a folder structure like this:
-
+```control
    .
    ├── IS
    │   └── OUTCAR
@@ -184,21 +182,19 @@ We can just upload calculation as a normal single calculation or we can use *-di
    │   └── OUTCAR
    └── FS
        └── OUTCAR
-
+```
 Example of a DIM calculation upload:
 Upload Dimmer, attach KPOINTS and DOSCAR information and set NO_dim as name and description.
-
+```control
    $ loadvasp -dim -kp KPOINTS -dc TS/DOSCAR -n NO_dim -d NO_dim
+```
 
 <span id="loadorca"></span>
-
-loadorca
---------
-
+###loadorca
 Loads an ORCA calculation into the the Create module, it can be used standalone as other shell client commands or it can be attached to a job script to be automatically uploaded after the calculation has finished.
 
-| Parameters    | Description                                                                                                                                                                                              |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Parameters    | Description                         |
+|---------------|-------------------------------------|
 | -i *filename* | Input file, (optional), if not defined will use script defined name                                                                                                                                      |
 | -o *filename* | Output file (optional), if not defined will use script defined name                                                                                                                                      |
 | -a            | Append additional file (optional)                                                                                                                                                                        |
@@ -207,56 +203,52 @@ Loads an ORCA calculation into the the Create module, it can be used standalone 
 | --molden      | Build molden file with calculation molecular orbitals from output file. Will use orca_m2kl script to do such conversion. Please read [--molden](/#molden "wikilink") section for further configuration. |
 | --auto        | Autogenerate current path into Create module (optional). Refer to [-auto](/#auto "wikilink") parameter section.                                                                                          |
 
-If parameters -i and -o are not set, it will look for *input.in* and 'output.out' files, if they are missing, the upload will be aborted. If we use another naming convention just edit the *loadorca* script file and replace default file names.
-
+If parameters **-i** and **-o** are not set, it will look for *input.in* and 'output.out' files, if they are missing, the upload will be aborted. If we use another naming convention just edit the *loadorca* script file and replace default file names.
+```control
     # Default static file names, change them in order to fit your naming conventions
     INPUT_DEFAULT_FILENAME="input.in"
     OUTPUT_DEFAULT_FILENAME="output.out"
-
+```
 If parameters -n and -d are not defined, the loadorca script will use the parent folder's name as calculation name and description.
 If a parameter value contains multiple words and blank spaces (like description), they must be enclosed inside double quotes.
+
 <span id="molden"></span>
-
 ### Molden orbitals file generation
-
 Along with input, output and additional files. This script allows generating a molden-format file that contains calculation molecular orbitals. If we use this flag, uploaded calculations will also display molecular orbitals on JSmol viewer.
 To generate such file, we must first edit the *loadorca* script file that resides on the shell client folder. First lines define multiple *orca_2mkl_X_X_X* variables.
-
+```control
     orca_2mkl_2_8="/opt/ORCA2_8/orca_x86_64_exe_r2131/orca_2mkl"
     orca_2mkl_2_9_0="/opt/ORCA2_9/orca_x86_64_exe_r2131/orca_2mkl"
     orca_2mkl_3_0_0=
     orca_2mkl_3_0_1=
-
+```
 We must set the correct path to this script file to match your file system configuration. orca_2mkl is installed along with Orca software. Be careful to define as much variables and paths for each installed Orca version on yous system. If you use *-molden* parameter on a Orca v2.8 output file and its parameter is undefined, wrong or points a different version (2.9, 3.0, ...), it will fail to work.
 
-### Examples
-
+##### Examples
 Upload calculation *ete* using *ete.inp* and *ete.out* files
-
+```control
     $ loadorca -i ete.inp -o ete.out -n "ete optimization" -d "Optimization ete"
-
+```
 Upload calculation named *ncs2* using *ncs2.inp* and *ncs2.out* files, name and description came from parent folder, then build molden molecular orbital files and upload it.
-
+```control
     $ pwd
     /home/user/Desktop/ncs2
     $ loadorca -i ncs2.inp -o ncs2.out -molden
-
+```
 Upload calculation and automatically build its parent folder, calculation name and description will be same as parent folder
-
+```control
     $ loadorca -i ete.inp -o ete.out --auto
-
+```
 <span id="auto"></span>
 
---auto parameter
-----------------
-
+###--auto parameter
 In some situations our calculations lay inside a complex folder structure, under a high number of nested subfolders. Such project structure can be generated via the Create web interface or using the Create shell client commands, like [cpro](/Shell_commands#cpro "wikilink"), [cdpro](/Shell_commands#cdpro "wikilink") and [pwdpro](/Shell_commands#pwdpro "wikilink"). This can be a time-consuming process, so we can use the *-auto* parameter to generate such structure for us.
 Imagine that we want to upload a calculation inside a path from a folder mounted like this:
-
+```control
    /home/user/mnt_cluster/metOH-oxidation/MoO2/metOH/TS1_NEB/02/reopt/freq
-
+```
 Generating such project hierarchy via shell commands (excluding $HOME) will be like this
-
+```control
    $ cpro -n metOH-oxidation -d metOH-oxidation
    $ cdpro metOH-oxidation
    $ cpro -n MoO2 -d MoO2
@@ -272,26 +264,25 @@ Generating such project hierarchy via shell commands (excluding $HOME) will be l
    $ cpro -n freq -d freq
    $ cdpro freq
    $ loadcalc -i input.in -o output -n freq1 -d freq1
-
-Using *-auto* parameter can be as simple as this
-
+```
+Using **-auto** parameter can be as simple as this
+```control
    $ cd /home/user/mnt_cluster/metOH-oxidation/MoO2/metOH/TS1_NEB/02/reopt/freq
    $ loadcalc -i input.in -o output -n freq1 -d freq1 -auto**
-
-Generated projects path will generate also *mnt_cluster* project, because *-auto* parameter excludes $HOME.
-If we want to exclude *mnt_cluster* folder or our folder is mounted in another path that does not contain a $HOME path like */mnt/cluster/...* we can edit our upload script *loadXXXX*:
-
-   # On auto mode we will generate a project path, navigate inside and then upload calculation
+```
+Generated projects path will generate also *mnt_cluster* project, because **-auto** parameter excludes *$HOME*.
+If we want to exclude *mnt_cluster* folder or our folder is mounted in another path that does not contain a *$HOME* path like */mnt/cluster/...* we can edit our upload script *loadXXXX*:
+```control
+  # On auto mode we will generate a project path, navigate inside and then upload calculation
    if [ $auto -gt 0 ]; then
        moveBasePath
-       full_path="$(cd "$(dirname "$output")"; pwd)"       #Will use 'output' file parent folders 
-       ~~home_path="$(cd $HOME_PATH; pwd)"~~  
+       full_path="$(cd "$(dirname "$output")"; pwd)"   # Will use 'output' file parent folders 
        home_path="$(cd $HOME_PATH/mnt_cluster; pwd)"   # Set this home_path if uploading from /home/user/mnt_cluster
        home_path="$(cd /mnt/cluster; pwd)"             # Set this home_path if uploading from /mnt/cluster
    
    
-       partial_path="${full_path/$home_path/''}"            #Remove user home folder
-       partial_path="${partial_path//[-@\$\%\& \"]/_}"   #Replace special characters and blank spaces by underscore
+       partial_path="${full_path/$home_path/''}"         # Remove user home folder
+       partial_path="${partial_path//[-@\$\%\& \"]/_}"   # Replace special characters and blank spaces by underscore
        if [ $verbose -gt 0 ]; then
            echo "Generating path : "$partial_path
        fi
@@ -304,27 +295,25 @@ If we want to exclude *mnt_cluster* folder or our folder is mounted in another p
            project="${project//[-@\$\%\&\"\' ]/_}"
            createpro="cpro -n "$project" -d "$project  
            changepro="cdpro "$project                       
-           executeRepCommand "$REP_SCRIPTS/exe-rep-command $changepro" "" #Try cdpro to project if fails we'll create this project           
+           executeRepCommand "$REP_SCRIPTS/exe-rep-command $changepro" ""     # Try cdpro to project, if it fails, we'll create this project           
            if [ ! $retval -eq  0 ]; then                 
            executeRepCommand "$REP_SCRIPTS/exe-rep-command $createpro" ""
                executeRepCommand "$REP_SCRIPTS/exe-rep-command $changepro" ""
            fi  
        done 
    fi
+```
 
-Shell upload automation
------------------------
+##Shell upload automation
+We can attach these lines to our calculation job scripts, so after the calculation software finishes its processing, it gets uploaded automatically into ioChem-BD, making this step totally unattended.
+Consider adding more verification steps inside upload scripts to avoid uploading erroneous calculations like premature exits, program crashes, not converged optimizations, etc.
 
-We can attach these lines to our calculation job scripts, so after the calculation software finishes its processing, it gets uploaded automatically into Create. So this process its now totally unattended.
-Consider adding more verification steps inside upload scripts to avoid uploading bad calculations like premature exits, program crashes, not converged optimizations, etc.
-
-<hr/>
+-----------------------------------------------------------------
 In these examples, we consider that the shell client resides on *$HOME/shell*:
-
-### Gaussian
-
+#####Gaussian job submit file example
+```control
+   ### Gaussian
    #!/bin/bash
-   
    #$ -pe smp* 12
    #$ -N test
    #$ -cwd
@@ -333,19 +322,19 @@ In these examples, we consider that the shell client resides on *$HOME/shell*:
    output=output.out
    
    /home/programs/bin/gaussian09.sh C01 $input $output
-   . $HOME/shell/start-rep-shell                                              (1)
-   loadgauss -i $input -o $output -n $output -d $output --auto                (2)
-   exit-rep                                                                   (3)
-   
+   . $HOME/shell/start-rep-shell                                            #  (1)
+   loadgauss -i $input -o $output -n $output -d $output --auto              #  (2)
+   exit-rep                                                                 #  (3)
+```
 
-Bolded text lines are used to :
+Numbered lines do:
 
-1.  Connect to Create
-2.  Upload calculation using Gaussian script and *$input* and *$output* parameters, builds path automatically
-3.  Disconnect from Create
+   1.  Connect to Create
+   2.  Upload calculation using Gaussian script and *$input* and *$output* parameters, builds path automatically
+   3.  Disconnect from Create
 
-### Turbomole
-
+#####Turbomole job submit file example
+```control
    #!/bin/bash
    
    #$ -pe smp* 1-
@@ -360,33 +349,33 @@ Bolded text lines are used to :
    /usr/bin/time -o time_output dscf
    
    output=$(basename $SGE_STDOUT_PATH)
-   . $HOME/shell/start-rep-shell           (1)
-   loadturbo -o $output --auto             (2)
-   exit-rep                                (3)
-
-Bolded text lines are used to :
+   . $HOME/shell/start-rep-shell          # (1)
+   loadturbo -o $output --auto            # (2)
+   exit-rep                               # (3)
+```
+Numbered lines do:
 
 1.  Connect to Create
 2.  Upload calculation using turbomole script and *$output* parameters
 3.  Disconnect from Create
 
-Recursive upload
-----------------
+##Recursive upload
 
 We can take advantage of shell scripting to automate calculation upload of multiple nested folders and subfolders.
+####One calculation per folder
 This is an example script that uploads a group of ADF calculations starting from current folder.
 Restrictions:
 
--   There must be only one input and ouput file inside each folder,
--   Uploaded calculations will have its name same as its parent folder name.
+   * There must be only one input and ouput file inside each folder,
+   * Uploaded calculations will have its name same as its parent folder name.
 
 We can customize which input and output files are captured setting wildcards **\*.in** and **\*.out**.
-
+```console
    #!/bin/bash
    . start-rep-shell                           # <--- Please append full path to start-rep-shell command
-    for folder in $(find  pwd -type d); do 
+    for folder in $(find  `pwd` -type d); do 
         echo "Processing folder :" $folder
-        inputfile="$(find  $folder -maxdepth 1  -name''' '*.in' '''-printf "%f\n")"
+        inputfile="$(find  $folder -maxdepth 1  -name''' '*.in' '''-printf "%f\n")"
         outputfile="$(find $folder -maxdepth 1  -name''' '*.out' '''-printf "%f\n")"
         if [ -z $inputfile ]; then
        echo "  Not matching files"
@@ -398,20 +387,20 @@ We can customize which input and output files are captured setting wildcards **\
         fi
    done
    exit-rep
-
+```
 We can derive previous script into more sophisticated versions.
+####Multiple calculations per folder
 The following script navigates inside all child folders, it search for all input and output files inside each folder and then uploads them.
 This script allows setting file extensions for input and output files.
 Restrictions:
-
--   Input and output files of the same calculation must have same name (and different extension)
--   Uploaded calculation will be named as input file (to avoid name collisions)
-
+   *   Input and output files of the same calculation must have same name (and different extension)
+   *   Uploaded calculation will be named as input file (to avoid name collisions)
+```console
  #!/bin/bash
  #Replace this variables to suit your naming convention
  INPUT_FILE_EXTENSION=in
  OUTPUT_FILE_EXTENSION=out
- . start-rep-shell                                  # <--- Please append full path to start-rep-shell command
+ . start-rep-shell                         # <--- Please append full path to start-rep-shell command
   for folder in $(find  pwd -type d); do 
      echo "Processing folder :" $folder    
      for inputfile in $(find  $folder -maxdepth 1  -name "*.$INPUT_FILE_EXTENSION" -printf "%f\n"); do
@@ -426,4 +415,4 @@ Restrictions:
      done    
  done
  exit-rep
-
+```
