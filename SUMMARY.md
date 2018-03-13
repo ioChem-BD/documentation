@@ -13,9 +13,9 @@
 * [Post installation check steps](installation/post-installation-check-steps.md)
 * [Define backup policy](backup-policy.md)
 
-## Other operations
+## Other admin operations
 
-* [Replace HTTP certificate](other-operations/replace-https-certificate.md)
+* [Replace HTTPS certificate](other-operations/replace-https-certificate.md)
   * [With existing certificate](other-operations/replace-https-certificate/with-existing-certificate.md)
   * [Purchase new CA certificate ](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
   * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
