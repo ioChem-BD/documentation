@@ -28,7 +28,7 @@ Please consider reading the [Basic introduction to ioChem-BD software](/Basic_in
 4. [User and group creation](/installation/User_and_group_generation.md)
 5. Browse [publishing endpoints definition](/installation/publishing_endpoints_definition.md)
 6. [Post installation check steps](/installation/Post_installation_check_steps.md)
-7. Define [backup policy](/installation/Backup_policy.md)
+7. Define [backup policy](backup-policy.md)
 
 #### Other operations 
 
