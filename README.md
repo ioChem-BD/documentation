@@ -22,8 +22,8 @@ Please consider reading the [Basic introduction to ioChem-BD software](/Basic_in
 
 ### Installation
 
-1. [System requirements](/installation/system_requirements.md)
-2. [Required steps](/installation/Required_steps.md) prior to installation 
+1. [System requirements](/installation/system_requirements)
+2. [Required steps](/installation/Required_steps) prior to installation 
 3. [Installation](/installation/Installation.md) procedure 
 4. [User and group creation](/installation/User_and_group_generation.md)
 5. Browse [publishing endpoints definition](/installation/publishing_endpoints_definition.md)
