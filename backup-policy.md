@@ -1,3 +1,4 @@
+##Define backup policy
 We must backup at least ioChem-BD databases and the assetstore folders to be able to restore our system in case of data loss or corruption.   
 The first one contains all data information and relations, and the latter contain the uploaded calculation files. We can code an script and crontab it every Sunday night, for example, to backup such fields into a backup destination folder. Here is a sample script that dumps and zips such information, it is advised to crontab it:
 
