@@ -1,5 +1,7 @@
 # Summary
 
+## ioChem-BD platform
+
 * [Wiki home](README.md)
 * [Platform introduction](platform-introduction.md)
 * [System requirements](system-requirements.md)
@@ -13,14 +15,6 @@
 * [Post installation check steps](installation/post-installation-check-steps.md)
 * [Define backup policy](backup-policy.md)
 
-## Other admin operations
-
-* [Replace HTTPS certificate](other-operations/replace-https-certificate.md)
-  * [With existing certificate](other-operations/replace-https-certificate/with-existing-certificate.md)
-  * [Purchase new CA certificate ](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
-    * [Validate domain owner](other-operations/validate-domain-owner.md)
-  * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
-
 ## Usage
 
 * [Create module walktrough](usage/create-module-walktrough.md)
@@ -31,4 +25,14 @@
     * [Shell automated scripts](usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
 * [Publishing calculations](usage/publishing-calculations.md)
 * [Generating reports](usage/generating-reports.md)
+* [FAQs](usage/faqs.md)
+
+## Advanced system configuration
+
+* [Customizing system interface](advanced-system-configuration/customizing-system-interface.md)
+* [Replace HTTPS certificate](other-operations/replace-https-certificate.md)
+  * [With existing certificate](other-operations/replace-https-certificate/with-existing-certificate.md)
+  * [Purchase new CA certificate ](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
+    * [Validate domain owner](other-operations/validate-domain-owner.md)
+  * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
 
