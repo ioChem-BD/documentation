@@ -25,4 +25,7 @@
 
 * [Create module walktrough](usage/create-module-walktrough.md)
 * [Uploading content](usage/uploading-content-to-create.md)
+  * [From web interface](usage/uploading-content-to-create/using-web-interface.md)
+  * [From shell client](usage/uploading-content-to-create/using-shell-client.md)
+* [Shell client commands](usage/uploading-content-to-create/shell-commands.md)
 
