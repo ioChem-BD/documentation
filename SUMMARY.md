@@ -27,6 +27,6 @@
 * [Uploading content](usage/uploading-content-to-create.md)
   * [From web interface](usage/uploading-content-to-create/using-web-interface.md)
   * [From shell client](usage/uploading-content-to-create/using-shell-client.md)
-  * [Shell client commands](usage/uploading-content-to-create/shell-commands.md)
-  * Shell automated scripts
+    * [Shell commands](usage/uploading-content-to-create/shell-commands.md)
+    * [Shell automated scripts](usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
 
