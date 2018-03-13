@@ -69,9 +69,7 @@ So if we use this lines, ioChem-BD will generate five users and two groups of us
 
 In this case we have named our user groups with the name of the group leader but you can use other naming convention as can be the group research type or whatever that suit your needs.
 
-Note: If this groups already exists (because you already used this .csv tool) and you only want to append the new users to it, please be very careful to set the names of the groups equals to the existing ones, you can check group names on *Access control-&gt; Groups*.
-
-<br/>Otherwise a new user group and a new publishing community will be generated and those users will be assigned to it.
+> Note: If this groups already exists (because you already used this .csv tool) and you only want to append the new users to it, please be very careful to set the names of the groups equals to the existing ones, you can check group names on *Access control-&gt; Groups*.<br/>Otherwise a new user group and a new publishing community will be generated and those users will be assigned to it.
 
 
 ####Options
