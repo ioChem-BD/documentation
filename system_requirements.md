@@ -1,8 +1,3 @@
----
-title: System requirements
-permalink: /System_requirements/
----
-
 These are the recommended system requirements to run ioChem-BD software:
 
 ## Hardware requirements
