@@ -54,12 +54,14 @@ Every line will contain all information about a single user. It will appear in t
 
 The user group field is used to easily build user groups, so users with same user group field will be included in that group. Example:
 
-` malvarez@iochem-bd.es;Moisés;Álvarez Moreno;Carles Bo group
+```code
+malvarez@iochem-bd.es;Moisés;Álvarez Moreno;Carles Bo group
 jprats@iochem-bd.es;Joan;Prats Rubio;Carles Bo group
 mperez@iochem-bd.es;Miguel;Pérez Álvarez;Carles Bo group
 jbel@iochem-bd.es;Jose;Bel Ortiz;Nuria López group
 ncolet@iochem-bd.es;Núria;Colet Serrano;Nuria López group
-`
+```
+
 So if we use this lines, ioChem-BD will generate five users and two groups of users:
 
 * Carles Bo group : with users Moises, Joan and Miguel
