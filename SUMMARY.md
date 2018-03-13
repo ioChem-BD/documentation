@@ -30,4 +30,5 @@
     * [Shell commands](usage/uploading-content-to-create/shell-commands.md)
     * [Shell automated scripts](usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
 * [Publishing calculations](usage/publishing-calculations.md)
+* [Generating reports](usage/generating-reports.md)
 
