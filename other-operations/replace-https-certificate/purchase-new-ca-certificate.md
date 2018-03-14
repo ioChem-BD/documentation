@@ -42,7 +42,7 @@ We will choose the first option. The program will request some basic information
    10:21:02.659 [main] INFO  update.UpdateProcess - ioChem-BD updated with patch ReplaceCertificate.                   
    Update process finished.  
 ```   
-
+###Purchasing the certificate
 After the process has ended, there will be new a file called *request.csr* on BASE_PATH/create/ssl folder, that is the certificate request file that we will send to the CA. At this point we must contact the CA to request the certificate.
 In the page of the CA we will pick a single domain certificate and then add it the basket. 
 Other type of domain certificate can be select if it better suits your needs, but the single domain one is a cheap solution.
@@ -57,22 +57,34 @@ After the payment has been done, the CA page will display a new certificate in t
 The following page will request to paste the content of the CSR file we have generated, so we will copy paste it including the *BEGIN NEW CERTIFICATE REQUEST* and the *END NEW CERTIFICATE REQUEST* lines. Paste CSR file content there.
 
 ![](/images/Cert3.png) 
+
 On the next page we will choose the "Jav Tomcat" option.
+
 ![](/images/Cert4.png)
+
 The next page will display the supported domains for this new certificate, please double check this fields are valid.
+
 ![](/images/Cert5.png) 
+
+###Validating domain ownership
 The next step is crucial in the certificate generation process. The CA must check that your are the real owner of that domain. To check it you can choose two validation methods:
-   * To store an specific file inside your web server, so the CA will later retrieve it, verifying you are the domain owner ([further instructions here](/Replace_HTTPS_certificate_using_CA_certificate#file "wikilink"))
-   * To send you a verification mail to an specific domain email address ([further instructions here](/Replace_HTTPS_certificate_using_CA_certificate#mail "wikilink"))
+   * To store an specific file inside your web server, so the CA will later retrieve it, verifying you are the domain owner, [further instructions here](/other-operations/validate-domain-owner.md#validate-domain-owner-using-CA-provided-file).
+   * To send you a verification mail to an specific domain email address , [further instructions here](/other-operations/validate-domain-owner.md#validate-domain-owner-using-email-address)
+
    
-<span id="postVerification"></span> 
 ![](/images/Cert6.png) 
+
 After deciding the validation method (via file or email), we must finally fill the contact form. 
+
 ![](/images/Cert8.png) 
+
 If you followed the previous steps for validating your certificate, the line of your certificate will now display a green *Active* button on your account.
+
 ![](/images/Cert12.png) 
+
 If you click the certificate link, you will be presented a page with the option to download the certificate public keys. We will use this files soon for installing the certificate. 
 Click on Download option to get public certificate zip file
+
 ![](/images/Cert13.png)
 
 ### Installing the certificate
@@ -120,7 +132,7 @@ Then we will run the tool with option 2:
    13:45:17.716 [main] INFO  update.UpdateProcess - ioChem-BD updated with patch ReplaceCertificate.
    Update process finished.
 ```
-If the result of the update process is successful, we can start the service. Otherwise please [revert certificate changes](/Replace_HTTPS_certificate#undoCertificate_generation "wikilink") and write to contact@iochem-bd.org reporting your errors
+If the result of the update process is successful, we can start the service. Otherwise please [revert certificate changes](/other-operations/replace-https-certificate/undo-certificate-generation-process.md) and write to contact@iochem-bd.org reporting your errors
 ```console
   iochembd$  BASE_PATH/apache-tomcat-7.0.37/bin/startup.sh
 ```

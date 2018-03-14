@@ -1,5 +1,3 @@
-<span id="file"></span>
-
 ##Validate domain owner using CA provided file
 If you selected to validate using a file provided by the CA, you will be presented a form that allows to download the validation file. You can download this file anytime from your user account. 
 ![](/images/Cert11.png)
@@ -39,9 +37,8 @@ Now start again the server:
    iochembd$  BASE_PATH/apache-tomcat-7.0.37/bin/startup.sh
 ```
 If everything is correct, you now must be able to access the file, so will do the CA, validating you as the domain owner. *Note:* This action can take hours to accomplish.
-You can leave ioChem-BD running on port 80 or undo this last step now that certificate is validated. To do so, just stop the ioChem-BD web service, comment the previously uncommented line and start the web service again, Now you can continue with the left [certificate installation steps](/Replace_HTTPS_certificate#postVerification "wikilink").
+You can leave ioChem-BD running on port 80 or undo this last step now that certificate is validated. To do so, just stop the ioChem-BD web service, comment the previously uncommented line and start the web service again, Now you can proceed with the remaining [certificate installation steps](/other-operations/replace-https-certificate/purchase-new-ca-certificate.md#validating-domain-ownership).
 
-<span id="mail"></span>
 ##Validate domain owner using email address
 If you choose to validate via email, you need to choose among different email addresses. The selected e-mail address will receive a link to end the request process. 
-![](/images/Cert7.png) Now you can continue with the left [certificate installation steps](/Replace_HTTPS_certificate#postVerification "wikilink").
+![](/images/Cert7.png) Now you can proceed with the remaining [certificate installation steps](/other-operations/replace-https-certificate/purchase-new-ca-certificate.md#validating-domain-ownership).

@@ -3,7 +3,6 @@ The ioChem-BD administrator account can easily customize Browse and Create modul
 The most important customizable sections are:
 
 ##Browse module
-<span id="front_page"></span>
 ###Front page
 Browse front page can be customized to display an institution logo and any extra text information so the running instance can be distinguished from other existing instances.
 It is also interesting as a mean to inform users of scheduled maintentance, new funcionalities notification, etc. 
@@ -63,7 +62,7 @@ From an administrator account, we will navigate to the desired community we want
 ![Community view](/images/BrowseCommunityCustom.png) 
 
 On the left side of the page will appear an administration menu bar where we will administer the community.
-If we want to increase the hierarchy of our content, we can add sub-communities inside our community by clicking *Create Sub-community*, this will take us to another page to configure it as described on [sub-community generation](/Publishing_endpoints_definition#subcommunity_generation "wikilink") section.
+If we want to increase the hierarchy of our content, we can add sub-communities inside our community by clicking *Create Sub-community*, this will take us to another page to configure it as described on [sub-community generation](/installation/publishing-endpoints-definition.md#subcommunity-generation) section.
 In this case we will choose *Edit...* option. 
 
 ![Admin tools sidebar](/images/BrowseCommunityCustom1.png)
@@ -81,7 +80,7 @@ If you want to apply extra customizations to a community, here are listed all fi
 
 <span id="collections"></span>
 ###Collections
-Collections are sets of calculations generated automatically during Create module publishing process. Their name is also user provided during [publication process](/Publishing_calculations_into_Browse "wikilink").
+Collections are sets of calculations generated automatically during Create module publishing process. Their name is also user provided during [publication process](/usage/publishing-calculations.md).
 In certain situations we may want to change collection name and additional fields: to fix publication misspells, wrong naming, change of naming convention, etc.
 To change it we will access into desired collection from an administrator account. 
 

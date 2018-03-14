@@ -93,8 +93,10 @@ The output of this patch will enumerate all steps performed and which files are 
    19:18:26.617 [main] INFO  update.UpdateProcess - ioChem-BD updated with patch ReplaceDomainCertificate.
    Update process finished.
    ```
-If the result of the update process is successful, we can start the service. Otherwise please [revert certificate changes](/#undoCertificate_generation "wikilink") and contact contact@iochem-bd.org reporting your errors
+If the result of the update process is successful, we can start the service. Otherwise please [revert certificate changes](/other-operations/replace-https-certificate/undo-certificate-generation-process.md) and contact contact@iochem-bd.org reporting your errors
 ```console
    iochembd$    BASE_PATH/apache-tomcat-7.0.37/bin/startup.sh
 ```
-Once started, we can check that the ioChem-BD service is running with a valid HTTPS certificate. ![none|frame|Green lock indicates a valid certificate](/images/Correct_https_certificate.png "wikilink")
+Once started, we can check that the ioChem-BD service is running with a valid HTTPS certificate, green lock indicates a valid certificate.
+
+![](/images/Correct_https_certificate.png "wikilink")
