@@ -54,30 +54,32 @@ The next tab has two options:
    * Embargo published elements: if marked, all published elements will be embargoed.
 
 DOI determination can take some minutes to resolver because it requires to contact third party services (CrossRef). Once DOI has been assigned, you will receive an email with the DOI for the published collection.
-The second option will allow you to embargo (restrict) the access to your published content.You can read more about the embargo feature [on this page](/Calculation_embargo "wikilink"). 
+The second option will allow you to embargo (restrict) the access to your published content.You can read more about the embargo feature [on this page](/usage/publishing-calculations/embargo.md). 
 
 ![Publication details tab](/images/PublicationOptions2.png)
 
 #####Step 3: Dataset type
 This tab allows to add extra manuscript information in the case that the dataset is part of the supporting information of a paper.
 You can define the manuscript title, DOI and Journal. In the situation that the paper doesn't have a valid DOI yet, you can check the checkbox *Not yet published, will provide it later*. 
+
 ![](/images/PublicationOptions3.png)
 
 #####Step 4: Additional fields
 The last step is used to define other authors and institutions related to the dataset. There is also a listbox with chemical terms to enrich the published elements, such terms will be later indexed by Browse module to ease data search.
 Once all the step forms have been filled, we will click the Publish button. 
+
 ![Additional fields tab](/images/PublicationOptions4.png) 
+
 After the publication process has ended, a resume window will display the link to edit published elements on Browse module and, only if you checked the embargo option, another link to review embargoed elements. 
 ![](/images/PublicationResume.png) 
 
-<span id="editCollection"></span>
 ###Published elements manipulation
 In the navigation frame, published elements will display a green tick on the right side.
 Published projects and subprojects will also have an additional black tick that points to the Browse *Collection edit* page. 
 ![](/images/EditPublishedElement.png) This page allows to:
    * Change published collection name
    * Set related article information
-   * Lift embargo ([read more here](/Calculation_embargo "wikilink"))
+   * [Lift embargo](/usage/publishing-calculations/embargo.md#lifting-the-embargo) 
    * Copy reviewers link
 
 On the  page that shows, the first section allows to change title, subtitle and description of the published collection:

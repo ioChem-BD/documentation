@@ -22,11 +22,11 @@ Embargoed collections have its individual item pages restricted. So only using t
 -   view HTML5 resume
 -   download calculation related files
 
-Embargoed collections generate an unique URL to review its content. Example of such link:
+Embargoed collections generate an unique URL to review its content, example:
 https://iochem-bd-test.iciq.es/browse/review-collection/100/78/7d61fee92da1ef2ac787cccc
 
 After publishing embargoed content from Create module, this links are displayed to the user so they can be shared.
-Users can access this links anytime on Create module by clicking on the black icon next to the project.
+Users can recover this links anytime on Create module by clicking on the black icon next to the project.
 
 ![This links point to the Edit Collection page](/images/EditPublishedElement.png "wikilink")
  
@@ -35,4 +35,8 @@ On the edit collection page, users can modify certain aspects of the published e
 
 ###Lifting the embargo
 
-Once the content has been validated/reviewed, users can lift the embargo on the same *Edit collection* page [none|frame|Clicking this button will lift the embargo on the collection](/File:EditCollection4.png "wikilink") When the embargo is lifted, the embargo section on *Edit collection* page won't appear and review links will cease to work.
+Once the content has been validated/reviewed, users can lift the embargo on the same *Edit collection* page . Clicking this button will lift the embargo on the collection:
+
+![](/images/EditCollection4.png) 
+
+When the embargo is lifted, the embargo section on *Edit collection* page won't appear and review links will cease to work.

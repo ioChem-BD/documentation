@@ -13,6 +13,7 @@ Please consider reading the [Basic introduction to ioChem-BD software](/platform
 
 
 ### Installation
+Steps required to deploy ioChem-BD software into a server. Exclusively for system administrators.
   1. [System requirements](/system-requirements.md)
   2. [Required steps](/installation/required_steps.md) prior to installation 
   3. [Installation](/installation/installation.md) procedure 
@@ -21,7 +22,7 @@ Please consider reading the [Basic introduction to ioChem-BD software](/platform
   6. [Post installation check steps](/installation/post-installation-check-steps.md)
 
 ### Usage
-
+Overview of the common day-to-day operations in the platform, for final users.
 * [Create module](/usage/create-module-walktrough.md) walktrough
 * [Uploading content](/usage/uploading-content-to-create.md) into Create
     * From [web interface](/usage/uploading-content-to-create/using-web-interface.md)
@@ -29,11 +30,12 @@ Please consider reading the [Basic introduction to ioChem-BD software](/platform
 * [Publishing calculations](/usage/publishing-calculations.md) into Browse
 * [Generating reports](/usage/generating-reports.md)
 * FAQ
+* Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
 
 ### Advanced system configuration 
+Specific and non-standard operations. Exclusively for system administrators.
 * [Customizing system](/advanced-system-configuration/customizing-system-interface.md) interface
 * [Replace HTTPS certificate](/other-operations/replace-https-certificate.md)
-* Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
 
 Read more about ioChem-BD at:  
 [Managing the Computational Chemistry Big Data Problem: The ioChem-BD Platform](http://pubs.acs.org/doi/abs/10.1021/ci500593j) - Journal of Chemical Information and Modeling : DOI: 10.1021/ci500593j
