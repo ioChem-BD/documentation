@@ -1,14 +1,14 @@
-##User and group generation
+##Creating users and groups
 The Browse module content is publicly accessible by anonymous users, the Create module, however, requires authentication to access. That is why we must define system users and user groups.
 Administrator has two mechanisms to generate user accounts:
 
-* Batch generation using a csv formatted file
+* [Batch generation](#batch-generation-with-csv) using a csv formatted file
 * Manual generation using web forms
 
 It is advised to use batch generation mechanism initially to speed up account generation, after that, adding new users can be done with either manual or batch mechanism.
 <span id="batch"></span>
 
-###Users/Group structure generation (.csv batch)
+###Batch generation with .csv
 We can use this webpage to speed up user and group generation. It will take as input a group of csv formatted lines and process it, performing automatically:
 
 * User creation (with automatic username deduction)

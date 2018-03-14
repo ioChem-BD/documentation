@@ -10,7 +10,7 @@
 
 * [Steps prior installation](installation/required_steps.md)
 * [Installation procedure](installation/installation.md)
-  * [Users and groups creation](installation/user-and-group-generation.md)
+  * [Creating users and groups](installation/user-and-group-generation.md)
   * [Publishing endpoints definition](installation/publishing-endpoints-definition.md)
 * [Post installation check steps](installation/post-installation-check-steps.md)
 * [Define backup policy](backup-policy.md)

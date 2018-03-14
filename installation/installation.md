@@ -166,4 +166,4 @@ Once installation has ended and web service has started, we should be able to ac
   * *BASE_URL*/browse
 
 Our browser will "complain" about the self-signed certificate of the HTTPS pages, we just need to add an exception to avoid future questions.
-Now that the ioChem-BD software is successfully deployed, we have to create user accounts and define user groups. Please refer to the [User and group generation](/installation/user-and-group-generation.md) page.
+Now that the ioChem-BD software is successfully deployed, we have to create user accounts and define user groups. Please refer to the [Creating users and groups](/installation/user-and-group-generation.md) page.
