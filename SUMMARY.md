@@ -2,7 +2,7 @@
 
 ## ioChem-BD platform
 
-* [Wiki home](README.md)
+* [Home](README.md)
 * [Introduction](platform-introduction.md)
 * [System requirements](system-requirements.md)
 

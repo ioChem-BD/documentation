@@ -1,9 +1,4 @@
----
-title: Main Page
-permalink: /Main_Page/
----
-
-# ioChem-BD chemical software - Wiki homepage
+#ioChem-BD chemical software documentation
 
 The ioChem-BD platform [www.iochem-bd.org](http://www.iochem-bd.org) is a multi-headed tool aimed at managing large volumes of quantum chemistry results from a diverse group of already common simulation packages.sample text
 
