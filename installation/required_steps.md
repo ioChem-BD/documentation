@@ -46,7 +46,7 @@ These fields will be used by ioChem-BD to define its database connection paramet
 |------------|-------------|---------------|
 | **database.host** | Hostname of postgresql server | localhost |
 | **database.port** | Postgresql port number | 5432 |
-| **database.username** | Postgresql username ([defined during installation process](/installation/installation.md#createdatabaseuser)) | iochembd |
+| **database.username** | Postgresql username ([defined during installation process](/installation/installation.md#createdatabaseuser))  [link](https://iochem-bd.gitbooks.io/documentation/content/installation/installation.html#createdatabaseuser)  | iochembd |
 | **database.password** | Postgresql password ([defined during installation process](/installation#createdatabaseuser "wikilink")) |          |
 
 ###Administrator account settings
