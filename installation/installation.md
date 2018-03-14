@@ -33,7 +33,7 @@ All the software is contained inside the single folder you just decompressed, wi
 We can place it anywhere in our filesystem: one good candidates is *iochembd* user home, another one is inside */opt* folder. From now on we will talk about *BASE_PATH* when we refer to the path of this folder.
 All extracted folders and its inner files must belong to the same user and group than the one that will start the web-server service (in this case *iochembd*), so it will be able to read and write inside it without problem.
 
-##Init database, create database user and its related databases
+##Init database, create database user and its related databases <a name="createdatabaseuser"></a>
 
 ### PostgreSQL configuration
 If you have just installed the PostgreSQL server package you need to initialise its databases and start the database server, as *root* user you must run:
@@ -62,7 +62,7 @@ We can now start the PostgreSQL database service:
 ```console
 root# /sbin/service postgresql restart
 ```
-<a name="createdatabaseuser"></a> We will now create a new PostgreSQL database user and set the account password.
+We will now create a new PostgreSQL database user and set the account password.
 From the command line we will change to "root" or "postgres" user account (one with enough rights to execute the *createuser* command) and type the following:
 ```console
 postgres$ createuser -s -d -l -P iochembd
