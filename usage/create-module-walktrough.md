@@ -40,12 +40,13 @@ This list will increase as more calculations types are implemented: Molcas, ORCA
 Other interesting columns that are worth explaning are:
    * Description: A larger description of project/calculation (special symbols are allowed).
    * Status: Current element status. Current possible values: created/published.
-   * Handle + Published flag: Identifier assigned to the element when it is published into the Browse module, this will be explained in depth in [Publishing calculations into Browse](/Publishing_calculations_into_Browse "wikilink")
+   * Handle + Published flag: Identifier assigned to the element when it is published into the Browse module, this will be explained in depth in [Publishing calculations into Browse](/usage/publishing-calculations.md)
 
 There is a context menu to help with repetitive actions. For every element inside the workspace, you must first select it with a left click and then right click it to see its available options.
+
 ![Element context menu](/images/CreateNavigationTreeContextMenu.png)
 
-> Note: Please refer to [Uploading calculations into Create](/Uploading_calculations_into_Create "wikilink") page to know how to populate your workspace.
+On the next page ([publishing calculations](/usage/publishing-calculations.md)) you will learn to populate your workspace.
 
 ### Search mode
 The Search tab will display a form where the user can query all uploaded projects/calculations and add multiple filters to refine queries.
@@ -53,7 +54,7 @@ Currently we can only filter by administrative metadata:
    * Name and description of the element, partial text matching search.
    * Type of the element (calculation software type)
    * Substructure (if ChemAxon plugin is enabled). This option displays a sketch panel where to draw a partial/full molecule to search for.
-   * Path, starting path to search for, see more at [Paths definition](/Uploading_content_into_Create#paths "wikilink") section
+   * Path, starting path to search for, see more at [path definition](/usage/uploading-content-to-create/using-web-interface.md#paths) section
    * User who created the element and Group of users that element belongs to
    * Access Permissions assigned to element
    * Creation, modification dates
@@ -68,7 +69,7 @@ We can click on each listed element to display its particular Item actions and d
 To perform a new query, the *Reset search* button will clean the form and go back to Search form.
 
 ### Report mode
-Due to its complexity, this mode is fully reported on the [Generating reports](/Generating_reports "wikilink") page, please check it.
+Due to its complexity, this mode is fully reported on the [Generating reports](/usage/generating-reports.md) page, please check it.
 
 ##Item actions frame
 This part of Create is in charge of displaying all actions related to a selected element on the Navigation/Search frame.
@@ -99,15 +100,18 @@ This report contains multiple sections, grouped by its content type:
    * Molecular info: Solvation parameters, charge and multiplicity
    * Job : Its content varies depending on the quantum chemistry package used to generate the calculation (ADF software generates different output fields than VASP, for example). On calculations with multiple jobs this section will appear more than once.
 
-There is an exhaustive description on report fields per calculation type on our webpage, please refer to [Conversion template reference](http://www.iochem-bd.org/conversion/webhelp/index.html#bk03.html) 
+There is an exhaustive description on report fields per calculation type on our webpage, please refer to [Conversion template reference](http://www.iochem-bd.org/conversion/webhelp/index.html) 
+
 ![](/images/CreateItemActionViewResults.png)
 
 ### Download
 This action allows downloading calculation files to our local filesystem. 
+
 ![](/images/CreateItemActionDownload.png)
 
 ### RAW view
 This action displays calculation files content inside a text area. On large files, it will start to download the file instead of displaying it. 
+
 ![](/images/CreateItemActionRaw.png)
 
 ##Item details frame
@@ -122,4 +126,5 @@ On the lower section of this frame there are three buttons that:
 
 ### Upload bar
 On the lower side of this frame there is an empty space, it is left blank intentionally to fit the upload bar. This bar will only appear while uploading calculations via the web interface.
+
 ![Upload bar](/images/CreateItemDetailsUploadBar.png)

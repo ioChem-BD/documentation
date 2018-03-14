@@ -2,42 +2,41 @@
 All commands described here allow **-h** parameter that will display a help message containing a wider description of its usage.
 ### Basic parameters
 
-| Command           | Description                     |
+| Command           | Description                  |
 |-------------------|------------------------------|
-| [source start-rep-shell](/#startrepshell "wikilink") | Connect to repository               |
-| [lspro](/#lspro "wikilink")                          | List current path contents          |
-| [pwdpro](/#pwdpro "wikilink")                        | Print current path (similar to pwd) |
-| [exit-rep](/#exit "wikilink")                        | Disconnect from repository          |
+| [source start-rep-shell](#start-rep-shell) | Connect to repository   |
+| [lspro](#lspro)          | List current path contents                |
+| [pwdpro](#pwdpro)        | Print current path (similar to pwd)       |
+| [exit-rep](#exit)        | Disconnect from repository                |
 
 
 ###Project related commands
 
-| Command                         | Description                               |
-|---------------------------------|-------------------------------------------|
-| [catpro](/#catpro "wikilink")   | Display project information               |
-| [cdpro](/#cdpro "wikilink")     | Change to project                         |
-| [cpro](/#cpro "wikilink")       | Create a new project                      |
-| [mpro](/#mpro "wikilink")       | Modify a project                          |
-| [dpro](/#dpro "wikilink")       | Delete a project                          |
-| [findpro](/#findpro "wikilink") | Find project by it’s name (regex allowed) |
+| Command                         | Description                   |
+|---------------------------------|-------------------------------|
+| [catpro](#catpro)   | Display project information               |
+| [cdpro](#cdpro)     | Change to project                         |
+| [cpro](#cpro)       | Create a new project                      |
+| [mpro](#mpro)       | Modify a project                          |
+| [dpro](#dpro)       | Delete a project                          |
+| [findpro](#findpro) | Find project by it’s name (regex allowed) |
 
 ###Calculation related commands
 
 | Command                                                    | Description                        |
 |------------------------------------------------------------|------------------------------------|
-| [viewcalc](/#viewcalc "wikilink")                          | View calculation information       |
-| [dcalc](/#dcalc "wikilink")                                | Delete calculation from repository |
-| [loadcalc](/#loadcalc "wikilink")                          | Load calculation into repository   |
+| [viewcalc](#viewcalc)                          | View calculation information       |
+| [dcalc](#dcalc)                                | Delete calculation from repository |
+| [loadcalc](#loadcalc)                          | Load calculation into repository   |
 | Calculation type specific commands                         |                                    |
-| [loadgauss](/Shell_automated_scripts#loadgauss "wikilink") | Load Gaussian calculation          |
-| [loadadf](/Shell_automated_scripts#loadadf "wikilink")     | Load ADF calculation               |
-| [loadturbo](/Shell_automated_scripts#loadturbo "wikilink") | Load Turbomole calculation         |
-| [loadorca](/Shell_automated_scripts#loadorca "wikilink")   | Load Orca calculation              |
-| [loadvasp](/Shell_automated_scripts#loadvasp "wikilink")   | Load Vasp calculation              |
+| [loadgauss](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgauss) | Load Gaussian calculation          |
+| [loadadf](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadadf)     | Load ADF calculation               |
+| [loadturbo](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadturbo) | Load Turbomole calculation         |
+| [loadorca](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadorca)   | Load Orca calculation              |
+| [loadvasp](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadvasp)   | Load Vasp calculation              |
 
 ##Basic parameters explained
-<span id="startrepshell"></span>
-### start-rep-shell
+###start-rep-shell
 Used to connect to the repository, it must be always preceded by **source** or **.** (dot), otherwise neither connection nor commands will work.
 
 | Examples                       |                                          |
@@ -45,8 +44,7 @@ Used to connect to the repository, it must be always preceded by **source** or *
 | *user$* source start-rep-shell | Connect to repository using long format  |
 | *user$* . start-rep-shell      | Connect to repository using short format |
 
-<span id="lspro"></span>
-### lspro
+###lspro
 Displays content of current path: projects and calculations. Otherwise we can define a path to list its content.
 
 | Parameters | Description  |                                                                                                  
@@ -61,16 +59,14 @@ Displays content of current path: projects and calculations. Otherwise we can de
 | *user$* lspro -n /db/username/hexenol | Lists by name the content of hexenol project (absolute path)|
 | *user$* lspro -o Sc2C82 | Lists by owner the content of hexenol project (relative to current path) |
 
-<span id="pwdpro"></span> 
-### pwdpro
+###pwdpro
 Displays the current path, similar to pwd (print working directory) but lists current position inside the project's hierarchy.
 
 | Examples       |                     |
 |----------------|---------------------|
 | *user$* pwdpro | Prints current path |
 
-<span id="exitrep"></span> 
-### exit-rep
+###exit-rep
 Disconnects from the repository and ends current session. All repository commands are disabled after this command is executed.
 
 | Examples         |                             |
@@ -78,8 +74,7 @@ Disconnects from the repository and ends current session. All repository command
 | *user$* exit-rep | Disconnects from repository |
 
 ##Project related commands
-<span id="catpro"></span> 
-### catpro
+###catpro
 Displays project information.
 
 | Parameters | Description   |
@@ -91,8 +86,8 @@ Displays project information.
 | *user$* catpro -n hexenol | Prints project information using relative path |
 | *user$* catpro -n /db/username/hexenol | Print project information using absolute path |
 
-<span id="cdpro"></span>
-### cdpro
+
+###cdpro
 Changes path by navigating to parent / child project or an absolute path.
 
 | Parameters | Description                                                |
@@ -105,8 +100,7 @@ Changes path by navigating to parent / child project or an absolute path.
 | *user$* cdpro -n metanol | Navigates to child project called metanol |
 | *user$* cdpro -n /db/username/metanol/freq | Navigates to project using full path |
 
-<span id="cpro"></span>
-### cpro
+###cpro
 Creates new project in current path. If name or description parameters contains blank spaces, they must be enclosed in double quotes.
 
 | Parameters | Description                             |
@@ -121,8 +115,8 @@ Creates new project in current path. If name or description parameters contains 
 | *user$* cpro -n metanol -d metanol -cg FRQ | Creates project with description and concept group |
 | *user$* cpro -n metanol -d "This is the metanol project description" | Creates metanol project with a long description |
 
-<span id="mpro"></span>
-### mpro
+
+###mpro
 Modifies the selected project properties, name, description or even moves it to another project (as a nested project).
 
 | Parameters           | Description                                         |
@@ -142,8 +136,8 @@ Modifies the selected project properties, name, description or even moves it to 
 | *user$* mpro -n /db/username/hexenol -np /db/user/alcohols | Moves selected project to another parent project |
 | *user$* mpro -n /db/username/hexenol -d "Replaced description" | Replaces description on selected project |
 
-<span id="dpro"></span>
-### dpro
+
+###dpro
 Deletes a project by defining its path, all child projects and calculations will also be removed from Create.
 
 | Parameters | Description                                   |
@@ -155,8 +149,7 @@ Deletes a project by defining its path, all child projects and calculations will
 | *user$* dpro -n metanol  | Deletes metanol project using relative path, our path must be at the level of this project |
 | *user$* dpro -n /db/username/alcohols/metanol | Deletes metanol project using absolute path, current path position is not relevant here    |
 
-<span id="findpro"></span>
-### findpro
+###findpro
 Find project by it’s name (regex allowed)
 
 | Parameters       | Description                                                               |
@@ -171,9 +164,8 @@ Find project by it’s name (regex allowed)
 | findpro -d "alco\* " | Finds projects which description match regular expression alco\* |
 
 
-## Calculation related commands
-<span id="viewcalc"></span>
-### viewcalc
+##Calculation related commands
+###viewcalc
 This comands displays the most relevant information about a calculation.
 
 | Parameters | Description                                   |
@@ -181,9 +173,8 @@ This comands displays the most relevant information about a calculation.
 | -n *path*  | Relative or absolute project path (mandatory) |
 | -f         | If present shows full contents. (optional)    |
 
-### dcalc
-
-<span id="dcalc"></span> This comands deletes a calculation given its name.
+###dcalc
+This comands deletes a calculation given its name.
 
 | Parameters | Description                                       |
 |------------|---------------------------------------------------|
@@ -199,8 +190,8 @@ Navigating to parent project and using calculation name:
     $ dcalc -n freq1                    #Will delete calculation freq1
 ```
 
-<span id="loadcalc"></span>
-### loadcalc
+
+###loadcalc
 Uploads a calculation into the Create module on the current project path. It is not allowed to upload calculations to the base path (*/db/username*), you must always upload calculations into a project.
 This is a generic command that will allow us to upload multiple files and formats, some parameters will be shared by more than one format so they will behave differently depending on the format, so please read the command help (-h parameter) carefully.
 
@@ -241,7 +232,7 @@ To ease the usage of this command we have developed a group of helper Linux scri
 
 | Script                     | Function |
 |----------------------------|----------|
-| [loadadf](/Shell_automated_scripts#loadadf "wikilink") | Upload **ADF** calculation             |
-| [loadgauss](/Shell_automated_scripts#loadgauss "wikilink") | Upload **Gaussian** calculation |                                    
-| [loadturbo](/Shell_automated_scripts#loadturbo "wikilink") | Upload **Turbomole** calculation|
-| [loadvasp](/Shell_automated_scripts#loadvasp "wikilink")   | Upload **Vasp** calculations (Nudge Elastic Band and Dimmer are also included) |
+| [loadadf](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgauss) | Upload **ADF** calculation             |
+| [loadgauss](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgauss) | Upload **Gaussian** calculation |                                    
+| [loadturbo](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadturbo) | Upload **Turbomole** calculation|
+| [loadvasp](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadvasp)   | Upload **Vasp** calculations (Nudge Elastic Band and Dimmer are also included) |

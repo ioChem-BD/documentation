@@ -1,8 +1,8 @@
-###using web interface
-<span id="paths"></span>
-#### Paths
+###Using web interface
+####Paths
 
 All elements inside the Create module have an associated path to define its position among all others elements. It can be revised by looking on top of the *Item details* form: 
+
 ![Element current path](/images/CreateDetailsPath.png)
 
 Paths work the same way than OS folder/file paths, we can navigate them up/down and inside/out.
@@ -10,7 +10,7 @@ All paths start with a fixed string that contains the username : **/db/username*
 
 > Note : No calculations are allowed to be uploaded on root path. They must be held inside a project.
 
-#### Creating a project
+####Creating a project
 Projects are the base to start uploading calculations and content in a hierarchical manner. Over time, as uploaded content gets larger, nested projects and a more complex ordering structure will become necessary to manage research data. Its up to users to build a structure that suit their needs.
 
 So projects created on root path will be now called root projects. To create them, you must first clear the current path by clicking the *Refresh* button, placed on top on the Navigation frame. 

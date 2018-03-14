@@ -1,10 +1,9 @@
 ##Shell automated scripts
 All ioChem-BD shell client commands can be shell-scripted to ease its upload into the Create module in an automated way.
-First we will present a few helper scripts that will assist you when loading calculations into the Create module by reducing the number of parameters passed (when needed) and by setting default values on undefined parameters. All of them are contained in the shell client, [downloadable](/Uploading_content_into_Create#shellupload "wikilink") from Create web page.
+First we will present a few helper scripts that will assist you when loading calculations into the Create module by reducing the number of parameters passed (when needed) and by setting default values on undefined parameters. All of them are contained in the shell client, [downloadable](/usage/uploading-content-to-create/using-shell-client.md#shell-client) from Create web page.
 At the end of this page, we will explain some basic scripts (customized for a specific calculation cluster) to guide you in the writing of your personalized upload scripts.
 Feel free to customize these scripts to fit your needs, or turn them into new ones. Set the **-v** parameter (verbose) on these scripts to display more information about each script mechanism. 
 
-<span id="loadadf"></span>
 ###loadadf
 Loads an ADF calculation into the the Create module, it can be used standalone as other shell client commands or it can be attached to a job script to be automatically uploaded after the calculation has finished.
 
@@ -45,17 +44,14 @@ Upload calculation and automatically build its parent folder, calculation name a
     $ loadadf -i irc_ts2_09.in -o irc_ts2_09.out --auto
 ```
 
-<span id="loadgauss"></span>
 ###loadgauss
-Same parameters and functionalities than the [loadadf](/#loadadf "wikilink") script.
+Same parameters and functionalities than the [loadadf](#loadadf) script.
 
 > Note: Please always use **\#P** flag on Gaussian calculations. Link information is required by ioChem-BD to properly capture text information.
 
-<span id="loadmolcas"></span>
 ###loadmolcas
-Same parameters and functionalities than the [loadadf](/#loadadf "wikilink") script.
+Same parameters and functionalities than the [loadadf](#loadadf) script.
 
-<span id="loadturbo"></span>
 ###loadturbo
 Loads a Turbomole calculation into the Create module, it can be used standalone as other shell client commands or it can be attached to a job script to be automatically uploaded after the calculation has finished.
 
@@ -119,8 +115,8 @@ Loads a VASP calculation into the Create module, it can be used standalone as ot
 | -n            | Name of the calculation in the data base (optional), if not defined the calculations' output file name will be used                       |
 | -d *desc*     | Description of the calculation in the data base (optional), if not defined the calculations' file name will used.                         |
 | --auto        | Autogenerate current path into Create module (optional). Refer to the [-auto](/#auto "wikilink") parameter section.                       |
-| -neb          | Upload Nudged Elastic Band calculation, see more at [Uploading NEB/DIM calculations section](/#uploading_NEB_DIM_calculations "wikilink") |
-| -dim          | Upload Dimmer calculation, see more at [Uploading NEB/DIM calculations section](/#uploading_NEB_DIM_calculations "wikilink")              |
+| -neb          | Upload Nudged Elastic Band calculation, see more at: [Uploading NEB/DIM calculations section](#uploading-vasp-neb-dim-calculation) |
+| -dim          | Upload Dimmer calculation, see more at: [Uploading NEB/DIM calculations section](#uploading-vasp-neb-dim-calculation)              |
 
 ##### Examples
 
@@ -142,8 +138,8 @@ Upload calculation set name and description to *opt2*. Will capture INCAR2 and O
 ```
 
 <span id="uploading_NEB_DIM_calculations"></span>
-### Uploading VASP NEB/DIM calculation
-#### NEB
+###Uploading VASP NEB/DIM calculation
+####NEB
 The nudged elastic band (NEB) is a method for finding saddle points and minimum energy paths between known reactants and products. The method works by optimizing a number of intermediate images along the reaction path.[1](http://theory.cm.utexas.edu/vtsttools/neb.html)
 This kind of calculation generates multiple output files (images) inside a collection of numbered subfolders. To upload this kind of calculations we will set **-neb** parameter on base folder. loadvasp script will expect at last this file structure, it will iterate all XX folders and concatenate all outcar files.
 ```control
@@ -242,7 +238,7 @@ Upload calculation and automatically build its parent folder, calculation name a
 <span id="auto"></span>
 
 ###--auto parameter
-In some situations our calculations lay inside a complex folder structure, under a high number of nested subfolders. Such project structure can be generated via the Create web interface or using the Create shell client commands, like [cpro](/Shell_commands#cpro "wikilink"), [cdpro](/Shell_commands#cdpro "wikilink") and [pwdpro](/Shell_commands#pwdpro "wikilink"). This can be a time-consuming process, so we can use the *-auto* parameter to generate such structure for us.
+In some situations our calculations lay inside a complex folder structure, under a high number of nested subfolders. Such project structure can be generated via the Create web interface or using the Create shell client commands, like [cpro](/usage/uploading-content-to-create/shell-commands.md#cpro), [cdpro](/usage/uploading-content-to-create/shell-commands.md#cdpro) and [pwdpro](/usage/uploading-content-to-create/shell-commands.md#pwdpro). This can be a time-consuming process, so we can use the *-auto* parameter to generate such structure for us.
 Imagine that we want to upload a calculation inside a path from a folder mounted like this:
 ```control
    /home/user/mnt_cluster/metOH-oxidation/MoO2/metOH/TS1_NEB/02/reopt/freq
