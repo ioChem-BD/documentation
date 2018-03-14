@@ -4,7 +4,7 @@ The first one contains all data information and relations, and the latter contai
 
 ```
 #!/bin/bash
-BACKUP_FOLDER=/home/iochembd/backup     <b># <-- Set your backup folder here</b>
+BACKUP_FOLDER=/home/iochembd/backup     # <-- Set your backup folder here
 IOCHEM_FOLDER=/home/iochembd/iochembd   # <-- Set your ioChem-BD installation folder here
 
 # Dump PostgreSQL databases, we must provide user password to allow dump to work properly, so please restrict script file rights to 700
