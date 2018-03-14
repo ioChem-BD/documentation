@@ -1,5 +1,5 @@
 ##User and group generation
-<span id="useraccountgeneration"></span> The Browse module content is publicly accessible by anonymous users, the Create module, however, requires authentication to access. That is why we must define system users and user groups.
+The Browse module content is publicly accessible by anonymous users, the Create module, however, requires authentication to access. That is why we must define system users and user groups.
 Administrator has two mechanisms to generate user accounts:
 
 * Batch generation using a csv formatted file

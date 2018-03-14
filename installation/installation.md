@@ -100,15 +100,26 @@ There are two checkboxes that configure email to use encryption.
 
 ![none|frame|E-mail parameters](/images/Install_step_200.png "wikilink") 
 After filling in all fields, we can test the email parameters by sending a test message. We can click on the *Send test* button to check this configuration. In the new form we can set the destination email and, if your configuration is valid, in a few seconds we must receive a test message from the installation program in our mailbox. Please check you received the test email because this is a very important step in ioChem-BD configuration, otherwise it will not be able to communicate with users (on sending reset password emails for example). 
+
 ![none|frame|Send test dialog](/images/Install_step_2a.png "wikilink") 
-The next form will ask for all the details related to SSL certificate generation, more info at [certificate fields](/installation/Required_steps.md#certificate "wikilink"): ![none|frame|Certificate generation](/images/Install_step_3.png "wikilink")
+
+The next form will ask for all the details related to SSL certificate generation, more info at [certificate fields](/installation/required_steps.md#certificate-fields): 
+
+![none|frame|Certificate generation](/images/Install_step_3.png "wikilink")
+
 Once our certificate has been generated and associated, a new form will pop up.
 In this one we must define the database connection parameters. Once all of them have been filled, we need to click on the *Test connection* button to check whether the database connection is successful. 
+
 ![none|frame|Database connection form](/images/Install_step_4.png "wikilink") 
-The next form will ask for basic login information for ioChem-BD administrator account generation, more info at [administrator account fields](/installation/Required_steps.md#admin "wikilink"): 
+
+The next form will ask for basic login information for ioChem-BD administrator account generation, more info at [administrator account fields](/installation/required_steps.md#administrator-account-settings): 
+
 ![none|frame|Admin account setup](/images/Install_step_5.png "wikilink") 
+
 Last form will ask for installing ioChem-BD, clicking on *Back* button will start all this steps again.
+
 ![none|frame|Installation confirmation form](/images/Install_step_6_a.png "wikilink") 
+
 After clicking on *Install*, messages will inform us of the different install stages **it can take a few minutes to finish all steps**.
 ![none|frame|Processing steps](/images/Install_step_7a.png "wikilink") 
 Once installation has finished, if you used default port (443) or one under 1024 to run ioChem-BD you must **run as root** the script file indicated by installer (*postinstall.sh*), in order to open such privileged port to ioChem-BD services.
@@ -155,5 +166,4 @@ Once installation has ended and web service has started, we should be able to ac
   * *BASE_URL*/browse
 
 Our browser will "complain" about the self-signed certificate of the HTTPS pages, we just need to add an exception to avoid future questions.
-Now that the ioChem-BD software is successfully deployed, we have to create user accounts and define user groups. Please refer to the [User and group generation](/installation/User_and_group_generation.md "wikilink") page.
-
+Now that the ioChem-BD software is successfully deployed, we have to create user accounts and define user groups. Please refer to the [User and group generation](/installation/user-and-group-generation.md) page.

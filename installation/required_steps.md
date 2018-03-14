@@ -20,7 +20,7 @@ It is advised to create an email account at your institution for ioChem-BD softw
 |<strong>smtp.mail.password</strong>|(Optional) If mail server requires authentication, set email account password||
 
 ###Certificate fields
-<span id="certificate"></span> ioChem-BD software should run on a web server that must be publicly accessible. This will not only allow its users to access it from anywhere but will also be used to interconnect Browse modules from different institutions to build a bigger data repository of theoretical chemistry results. So it must be accessible as a domain or as part of a subdomain of the destination institution.
+ioChem-BD software should run on a web server that must be publicly accessible. This will not only allow its users to access it from anywhere but will also be used to interconnect Browse modules from different institutions to build a bigger data repository of theoretical chemistry results. So it must be accessible as a domain or as part of a subdomain of the destination institution.
 
 | Field name | Description | Sample values |
 |-----------|---------------|---------------| 
@@ -50,7 +50,7 @@ These fields will be used by ioChem-BD to define its database connection paramet
 | **database.password** | Postgresql password ([defined during installation process](/installation/installation.md#init-database)) |          |
 
 ###Administrator account settings
-<span id="admin"></span> During the last steps of installation you will be prompted to generate an ioChem-BD administrator account, such account will be the one in charge of managing and configuring all the software package.
+During the last steps of installation you will be prompted to generate an ioChem-BD administrator account, such account will be the one in charge of managing and configuring all the software package.
 For the sake of ioChem-BD's security it is advised that the administrator creates a "non-admin" user account if he/she wants to work with Create module as a normal user.
 
 |Field name|Description|Sample values|
