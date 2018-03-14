@@ -91,7 +91,7 @@ iochembd$ ./init.sh
 A form will appear showing that the installer has started. 
 ![none|frame|Welcome form](/images/Install_step_1.png) 
 
-The next one will display the e-mail parameters configuration, more info at [mail fields](/installation/required_steps.md#Mail settings).
+The next one will display the e-mail parameters configuration, more info at [mail fields](/installation/required_steps.md#mail-settings).
 There are two checkboxes that configure email to use encryption.
 
   * with no encrypted email services (default port 25) we will set both options unchecked
