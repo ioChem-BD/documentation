@@ -2,7 +2,9 @@
 title: Installation
 permalink: /Installation/
 ---
-The system administrator must perform the following actions:
+#Installation
+
+The system administrator must perform following actions prior deploying the ioChem-BD platform.
 ###Create iochembd system user
 As root we will create a user account called *iochembd*, it will hold ioChem-BD files and will be responsible for running the web service that provides access to the software.
 ```console
