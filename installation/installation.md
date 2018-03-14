@@ -62,8 +62,7 @@ We can now start the PostgreSQL database service:
 ```console
 root# /sbin/service postgresql restart
 ```
-
-<span id="createdatabaseuser"></span> We will now create a new PostgreSQL database user and set the account password.
+<a name="createdatabaseuser"></a> We will now create a new PostgreSQL database user and set the account password.
 From the command line we will change to "root" or "postgres" user account (one with enough rights to execute the *createuser* command) and type the following:
 ```console
 postgres$ createuser -s -d -l -P iochembd

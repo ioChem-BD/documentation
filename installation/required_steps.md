@@ -29,7 +29,7 @@ We define *Field name* column in the tables as an easy way to refer to these par
 | **host.port** | Port where the software will run and will be browsed (default: 443) <br/>Never use 80 because ioChem-BD uses HTTPS instead of HTTP | 443 (default) |
 
 All communications inside this software, shell client &lt;-&gt; modules , module &lt;-&gt; module, user browser &lt;-&gt; module are safety encrypted using SSL certificates; right now it uses self-signed certificates but in future revisions we will add support for Certification Authority (CA) certificates.
-**Note:** To build the certificate, you must provide a few fields to generate it correctly . Please keep in mind that the field defined in **${cert.organization}** will be the organization name, which will be appended to all generated content and displayed in ioChem-BD web pages.
+> Note: To build the certificate, you must provide a few fields to generate it correctly . Please keep in mind that the field defined in **${cert.organization}** will be the organization name, which will be appended to all generated content and displayed in ioChem-BD web pages.
 
 | Field name | Description | Sample values |
 |------------|-------------|---------------|
@@ -46,7 +46,7 @@ These fields will be used by ioChem-BD to define its database connection paramet
 |------------|-------------|---------------|
 | **database.host** | Hostname of postgresql server | localhost |
 | **database.port** | Postgresql port number | 5432 |
-| **database.username** | Postgresql username ([defined during installation process](/installation/Installation.md#createdatabaseuser "wikilink")) | iochembd |
+| **database.username** | Postgresql username ([defined during installation process](/installation/installation.md#createdatabaseuser)) | iochembd |
 | **database.password** | Postgresql password ([defined during installation process](/installation#createdatabaseuser "wikilink")) |          |
 
 ###Administrator account settings
