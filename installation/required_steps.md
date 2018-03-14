@@ -46,12 +46,12 @@ These fields will be used by ioChem-BD to define its database connection paramet
 |------------|-------------|---------------|
 | **database.host** | Hostname of postgresql server | localhost |
 | **database.port** | Postgresql port number | 5432 |
-| **database.username** | Postgresql username ([defined during installation process](/installation/installation.md#createdatabaseuser))  [link](https://iochem-bd.gitbooks.io/documentation/content/installation/installation.html#createdatabaseuser)  | iochembd |
-| **database.password** | Postgresql password ([defined during installation process](/installation#createdatabaseuser "wikilink")) |          |
+| **database.username** | Postgresql username ([defined during installation process](https://iochem-bd.gitbooks.io/documentation/content/installation/installation.html#createdatabaseuser))| iochembd |
+| **database.password** | Postgresql password ([defined during installation process](https://iochem-bd.gitbooks.io/documentation/content/installation/installation.html#createdatabaseuser)) |          |
 
 ###Administrator account settings
 <span id="admin"></span> During the last steps of installation you will be prompted to generate an ioChem-BD administrator account, such account will be the one in charge of managing and configuring all the software package.
-For the sake of ioChem-BD's security it is advised that the administrator [creates a "non-admin" user account](/installation/Structure_generation#useraccountgeneration "wikilink") if he/she wants to work with Create module as a normal user.
+For the sake of ioChem-BD's security it is advised that the administrator creates a "non-admin" user account if he/she wants to work with Create module as a normal user.
 
 |Field name|Description|Sample values|
 |----------|-----------|-------------|
