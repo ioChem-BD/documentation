@@ -1,6 +1,8 @@
 ##Publishing calculations
 Calculations uploaded into the Create module are only accessible to registered ioChem-BD users, this will usually be comprised of a small group of individuals that conform the research group/center. Their calculations will not be accessible until they are published in the Browse module, the public module of ioChem-BD.
+
 Before moving to the publication mechanism, it is interesting to read again the section about the organizational elements that conform each module: [ioChem-BD organizative elements](/platform-introduction.md#modular-architecture).
+
 So published projects become Collections and published calculations become items on the Browse module, it is a mere grammatical change to align with DSpace software naming convention. Once published, both elements are linkable, searchable and viewable publicly.
 
 ### Publication requirements
