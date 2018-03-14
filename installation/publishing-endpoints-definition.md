@@ -108,13 +108,7 @@ In this demo case we are working with a user community so we will add this only 
 ![Set community administrators](/images/Admin_addcommunityadmin3.png) 
 We will do so for every user / group of users that we want to be able to publish, otherwise users will not be able to publish in the Browse module.
 
-##Resume
-This last steps conclude the ioChem-BD system installation and configuration. Let us recap all steps taken until we get here:
-   1.  Gather important system configuration parameters
-   2.  Create database and start software installation
-   3.  Copy Create license to installation directory
-   4.  Start webserver and login as administrator
-   5.  Generate users and groups from Browse module
-   6.  Create communities and subcommunities where users will be able to publish their digital assets.
-
-Adding new users to ioChem-BD will require following the steps described in [user generation](/installation/user-and-group-generation.md#creating-users), and creating a community where to publish or only add a user into a group that has publishing communities defined.
+###Resume
+Adding new users to ioChem-BD will require:
+  1. [Create the user](/installation/user-and-group-generation.md#creating-users), associate it to (at least) a user group and
+  2. [Create a community](#publishing-endpoints-definition) where the user will publish or associate that user into a user group that already have publishing communities associated.

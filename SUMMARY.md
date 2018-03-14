@@ -12,8 +12,8 @@
 * [Installation procedure](installation/installation.md)
   * [Creating users and groups](installation/user-and-group-generation.md)
   * [Publishing endpoints definition](installation/publishing-endpoints-definition.md)
-* [Post installation check steps](installation/post-installation-check-steps.md)
 * [Define backup policy](backup-policy.md)
+* [Post installation check steps](installation/post-installation-check-steps.md)
 
 ## Usage
 
@@ -24,6 +24,7 @@
     * [Shell commands](usage/uploading-content-to-create/shell-commands.md)
     * [Shell automated scripts](usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
 * [Publishing calculations](usage/publishing-calculations.md)
+  * [Embargo](usage/publishing-calculations/embargo.md)
 * [Generating reports](usage/generating-reports.md)
 * [FAQs](usage/faqs.md)
 

@@ -1,6 +1,6 @@
 ##Publishing calculations
 Calculations uploaded into the Create module are only accessible to registered ioChem-BD users, this will usually be comprised of a small group of individuals that conform the research group/center. Their calculations will not be accessible until they are published in the Browse module, the public module of ioChem-BD.
-Before moving to the publication mechanism, it is interesting to read again the section about the organizational elements that conform each module: [ioChem-BD organizative elements](/Basic_introduction_to_ioChem-BD_software#modular "wikilink")
+Before moving to the publication mechanism, it is interesting to read again the section about the organizational elements that conform each module: [ioChem-BD organizative elements](/platform-introduction.md#modular-architecture).
 So published projects become Collections and published calculations become items on the Browse module, it is a mere grammatical change to align with DSpace software naming convention. Once published, both elements are linkable, searchable and viewable publicly.
 
 ### Publication requirements
@@ -8,11 +8,9 @@ To perform calculation publication, users must meet the following requirements:
    * Publishing user must have defined (on Browse module) a community where to publish.
    * Publishing user must have administrator rights to publish on such community, so he/she will has to be able to create collections and publish items.
 
-The steps required to create a community and assign its administrator falls upon ioChem-BD's system administator and are described on [publishing endpoints definition](/Publishing_endpoints_definition "wikilink") page.
+The steps required to create a community and assign its administrator falls upon ioChem-BD's system administator and are described on [publishing endpoints definition](/installation/publishing-endpoints-definition.md) page.
 
-<span id="publicationSteps"></span>
 ### Publication steps
-
 ####Select the elements to publish
 On Create module, navigate to the project where the desired calculations reside. We can select an individual calculation by clicking on it, or using multiselect with *Ctrl + Click*, *Alt + Click*. Another way to select calculations is right clicking on parent project and choose *Select child elements* from its context menu.
 
@@ -37,15 +35,17 @@ In the publication process, a project hierarchy will be replaced for a *collecti
 > Note: If they exist, we can select the endpoint where to publish by using drag and drop. Already published elements (the ones with a green tick) cannot be moved because their path has been already set. We can change published calculation and project names by clicking the element name.
 
 ###Publication form steps
+
 ![Publication options](/images/PublicationOptions.png "wikilink")
+
 On right side of the publication form there is a group of option tabs that allow to define published element metadata and its relation to journal articles.
 #####Step 1: Titles and description
 This tab allog to configure information related to published calculation:
    * Calculation naming convention : We can choose to prepend full parent projects name into calculation name or set only calculation name
    * Description field: If checked, calculation description field will be added as a metadata field and will be publicly accessible on Browse module.
+
 ![Titles and description tab](/images/PublicationOptions1.png) 
 
-<span id="doiembargo"></span>
 #####Step 2: Publication details
 The next tab has two options:
    * Generate DOI for top projects: will request a DOI identifier that points to the published collection
