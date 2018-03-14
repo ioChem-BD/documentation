@@ -12,38 +12,28 @@ A heavy use of the Chemical Mark-up Language \(CML\) is made in the intermediate
 Please consider reading the [Basic introduction to ioChem-BD software](/platform-introduction.md) before continuing reading this wiki. Here you will view the features and data flows that this software contains in order to manage quantum chemistry calculations.
 
 
-
-
-
 ### Installation
-
-1. [System requirements](/system-requirements.md)
-2. [Required steps](/installation/required_steps.md) prior to installation 
-3. [Installation](/installation/installation.md) procedure 
-4. [User and group creation](/installation/user-and-group-generation.md)
-5. Browse [publishing endpoints definition](/installation/publishing_endpoints_definition.md)
-6. [Post installation check steps](/installation/Post_installation_check_steps.md)
-7. Define [backup policy](backup-policy.md)
-
-#### Other operations 
-
-* [Replace HTTPS certificate](/installation/Replace_HTTPS_certificate.md)
+  1. [System requirements](/system-requirements.md)
+  2. [Required steps](/installation/required_steps.md) prior to installation 
+  3. [Installation](/installation/installation.md) procedure 
+  4. [User and group creation](/installation/user-and-group-generation.md)
+  5. Define [backup policy](/backup-policy.md)
+  6. [Post installation check steps](/installation/post-installation-check-steps.md)
 
 ### Usage
 
-* [Create module](/Create_module "wikilink") walktrough
-* [Uploading content into Create](/Uploading_content_into_Create "wikilink")
-* Shell client [download](/Uploading_content_into_Create#shellupload "wikilink")
-* [Shell commands](/Shell_commands "wikilink")
-* [Shell automated scripts](/Shell_automated_scripts "wikilink")
-* [Publishing calculations into Browse](/Publishing_calculations_into_Browse "wikilink")
-* [Generating reports](/Generating_reports "wikilink")
-* [FAQ](/FAQ "wikilink")                      
+* [Create module](/usage/create-module-walktrough.md) walktrough
+* [Uploading content](/usage/uploading-content-to-create.md) into Create
+    * From [web interface](/usage/uploading-content-to-create/using-web-interface.md)
+    * From [shell client](/usage/uploading-content-to-create/using-web-interface.md)
+* [Publishing calculations](/usage/publishing-calculations.md) into Browse
+* [Generating reports](/usage/generating-reports.md)
+* FAQ
 
 ### Advanced system configuration 
-* [Customizing system interface](/Customizing_system_interface "wikilink")
-* [Conversion templates reference](/Conversion_templates_reference "wikilink")
-* HTML5 report expansion
+* [Customizing system](/advanced-system-configuration/customizing-system-interface.md) interface
+* [Replace HTTPS certificate](/other-operations/replace-https-certificate.md)
+* Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
 
 Read more about ioChem-BD at:  
 [Managing the Computational Chemistry Big Data Problem: The ioChem-BD Platform](http://pubs.acs.org/doi/abs/10.1021/ci500593j) - Journal of Chemical Information and Modeling : DOI: 10.1021/ci500593j
