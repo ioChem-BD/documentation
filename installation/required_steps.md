@@ -8,7 +8,7 @@ So please write down all these fields and keep them at hand during the installat
 ## Required information
 In this section we will list all fields that will be prompted for the user to fulfill, all accompanied at the end by a little description of its usage in the system.
 We define *Field name* column in the tables as an easy way to refer to these parameters during installation.
-###Mail settings <a name="mail"></a>
+###Mail settings
 It is advised to create an email account at your institution for ioChem-BD software, otherwise you can use a personal email address as sender of all notifications.
 
 |Field name|Description|Sample values|
