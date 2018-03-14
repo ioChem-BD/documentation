@@ -1,6 +1,6 @@
 ##Publishing endpoints definition 
 Once our users and groups are generated, we must consider building the entity hierarchy on the Browse module to store all published elements coming from the Create module.
-As we explained on   [Basic introduction to ioChem-BD software](/Basic_introduction_to_ioChem-BD_software "wikilink") page, the Create module will be used to work with calculations coming from HPC clusters. On this module we will be able to read a HTML5 summary of the most important calculations fields, their geometry and perform searches, generate reports and so on.
+As we explained on   [Basic introduction to ioChem-BD software](/platform-introduction.md) page, the Create module will be used to work with calculations coming from HPC clusters. On this module we will be able to read a HTML5 summary of the most important calculations fields, their geometry and perform searches, generate reports and so on.
 All this work is done privately inside the Create module but it can be published into the Browse module to share your calculations with the rest of the world. This process is done by publishing Create projects and calculations into Browse, but that raises a question: where to publish on Browse module? So that is the reason why it is necessary to generate a publishing hierarchy on the Browse model to hold all these new calculations and projects.
 
 ------------------------------------------------------------------------------------
@@ -114,4 +114,4 @@ This last steps conclude the ioChem-BD system installation and configuration. Le
    5.  Generate users and groups from Browse module
    6.  Create communities and subcommunities where users will be able to publish their digital assets.
 
-Adding new users to ioChem-BD will require following the steps described in [user generation](/User_and_group_generation#users "wikilink"), and creating a community where to publish or only add a user into a group that has publishing communities defined.
+Adding new users to ioChem-BD will require following the steps described in [user generation](/installation/user-and-group-generation.md#creating-users), and creating a community where to publish or only add a user into a group that has publishing communities defined.
