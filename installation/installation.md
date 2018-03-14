@@ -91,7 +91,7 @@ iochembd$ ./init.sh
 A form will appear showing that the installer has started. 
 ![none|frame|Welcome form](/images/Install_step_1.png "wikilink") 
 
-The next one will display the e-mail parameters configuration, more info at [mail fields](/installation/Required_steps.md#mail "wikilink").
+The next one will display the e-mail parameters configuration, more info at [mail fields](/installation/required_steps.html#mail).
 There are two checkboxes that configure email to use encryption.
 
   * with no encrypted email services (default port 25) we will set both options unchecked
