@@ -1,5 +1,9 @@
 {
     "root": ".",
-    "plugins" : [ ]
+    "plugins" : [ ],
+    "links": {
+        "sidebar": false
+    }
+    
 }
 
