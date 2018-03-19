@@ -110,18 +110,20 @@ The next form will ask for all the details related to SSL certificate generation
 Once our certificate has been generated and associated, a new form will pop up.
 In this one we must define the database connection parameters. Once all of them have been filled, we need to click on the *Test connection* button to check whether the database connection is successful. 
 
-![none|frame|Database connection form](/images/Install_step_4.png "wikilink") 
+![none|frame|Database connection form](/images/Install_step_4.png) 
 
 The next form will ask for basic login information for ioChem-BD administrator account generation, more info at [administrator account fields](/installation/required_steps.md#administrator-account-settings): 
 
-![none|frame|Admin account setup](/images/Install_step_5.png "wikilink") 
+![none|frame|Admin account setup](/images/Install_step_5.png) 
 
 Last form will ask for installing ioChem-BD, clicking on *Back* button will start all this steps again.
 
-![none|frame|Installation confirmation form](/images/Install_step_6_a.png "wikilink") 
+![none|frame|Installation confirmation form](/images/Install_step_6_a.png) 
 
 After clicking on *Install*, messages will inform us of the different install stages **it can take a few minutes to finish all steps**.
-![none|frame|Processing steps](/images/Install_step_7a.png "wikilink") 
+
+![none|frame|Processing steps](/images/Install_step_7a.png) 
+
 Once installation has finished, if you used default port (443) or one under 1024 to run ioChem-BD you must **run as root** the script file indicated by installer (*postinstall.sh*), in order to open such privileged port to ioChem-BD services.
 If you get a message like this:
 ```console
