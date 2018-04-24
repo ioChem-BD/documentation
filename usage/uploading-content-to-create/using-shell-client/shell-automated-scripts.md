@@ -371,8 +371,8 @@ We can customize which input and output files are captured setting wildcards **\
    . start-rep-shell                           # <--- Please append full path to start-rep-shell command
     for folder in $(find  `pwd` -type d); do 
         echo "Processing folder :" $folder
-        inputfile="$(find  $folder -maxdepth 1  -name''' '*.in' '''-printf "%f\n")"
-        outputfile="$(find $folder -maxdepth 1  -name''' '*.out' '''-printf "%f\n")"
+        inputfile="$(find  $folder -maxdepth 1  -name '*.in' -printf "%f\n")"
+        outputfile="$(find $folder -maxdepth 1  -name '*.out' -printf "%f\n")"
         if [ -z $inputfile ]; then
        echo "  Not matching files"
         else
