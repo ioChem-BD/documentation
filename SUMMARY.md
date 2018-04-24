@@ -26,7 +26,7 @@
 * [Publishing calculations](usage/publishing-calculations.md)
   * [Embargo](usage/publishing-calculations/embargo.md)
 * [Generating reports](usage/generating-reports.md)
-* [FAQs](usage/faqs.md)
+* [FAQ](https://faq.iochem-bd.org "FAQ")
 
 ## Advanced system configuration
 
