@@ -1,0 +1,7 @@
+nav[role='navigation'] > ul >:first-child {
+    display:none
+}
+
+nav[role='navigation'] > ul >:nth-child(2) {
+    display:none
+}
