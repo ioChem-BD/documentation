@@ -4,10 +4,10 @@
 
 * [Home](README.md)
 * [Introduction](platform-introduction.md)
-* [System requirements](system-requirements.md)
 
 ## Installation
 
+* [System requirements](system-requirements.md)
 * [Steps prior installation](installation/required_steps.md)
 * [Installation procedure](installation/installation.md)
   * [Creating users and groups](installation/user-and-group-generation.md)
@@ -15,7 +15,7 @@
 * [Define backup policy](backup-policy.md)
 * [Post installation check steps](installation/post-installation-check-steps.md)
 
-## Usage
+## User manual
 
 * [Create module walktrough](usage/create-module-walktrough.md)
 * [Uploading content](usage/uploading-content-to-create.md)

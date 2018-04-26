@@ -36,6 +36,6 @@ Overview of the common day-to-day operations in the platform, for final users.
 Specific and non-standard operations. Exclusively for system administrators.
 * [Customizing system](/advanced-system-configuration/customizing-system-interface.md) interface
 * [Replace HTTPS certificate](/other-operations/replace-https-certificate.md)
-
-Read more about ioChem-BD at:  
+---
+### Read more about ioChem-BD  
 [Managing the Computational Chemistry Big Data Problem: The ioChem-BD Platform](http://pubs.acs.org/doi/abs/10.1021/ci500593j) - Journal of Chemical Information and Modeling : DOI: 10.1021/ci500593j

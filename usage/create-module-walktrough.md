@@ -1,4 +1,4 @@
-#Introduction
+#Create module walktrough
 The Create module is a single-page application aimed to manage chemical outputs from scientific research and to generate derived content from it. 
 ![Create module main page](/images/CreateMain.png)
 
