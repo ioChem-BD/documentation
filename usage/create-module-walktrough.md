@@ -9,7 +9,7 @@ The window is composed of three frames, some with several Tabs:
 * Item Actions
 * Item Details
 
-![Frame composition](/images/CreateMainPageFrames.png)The default operation flow within the Create module starts by navigating / browsing user-uploaded content on the Navigation frame and selecting one of them to display its content on the Item actions and Details frames. Multiple element selection is allowed, this is normally associated to publishing and report generation procedures. Multiple element selection also disables Item actions and details frames.
+![Frame composition](/images/CreateMainPageFrames.png)The default operation flow within the Create module starts by navigating/browsing user-uploaded content in the Navigation frame and selecting one of them to display its content. Whon the Item actions and Details frames. Multiple 
 
 ## Navigation frame
 
@@ -19,7 +19,7 @@ This frame is the entry point of all major functionalities of the Create module,
 * Search and
 * Report generation.
 
-To switch between modes, the user only has to click on each tab:   
+To switch between modes, the user only has to click on each tab:  
 ![Mode switch tabs](/images/CreateNavigationTabs.png)
 
 ### Navigation/Edition mode
@@ -67,7 +67,7 @@ Currently we can only filter by administrative metadata:
 In future developments we will index calculation internal metadata to index and search by calculation type, final energy, and any user-defined field.  
 ![Multiple field search form](/images/CreateSearchForm.png)
 
-After setting all search parameters we must click on the _Search_ button to perform a query on current module data. A list of results will appear with matching results.   
+After setting all search parameters we must click on the _Search_ button to perform a query on current module data. A list of results will appear with matching results.  
 ![](/images/CreateSearchFormResults.png)  
 We can click on each listed element to display its particular Item actions and details.  
 To perform a new query, the _Reset search_ button will clean the form and go back to Search form.
