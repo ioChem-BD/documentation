@@ -1,19 +1,25 @@
 # ioChem-BD documentation
 
-  
-Consider reading the [Basic introduction to ioChem-BD ](/platform-introduction.md) before continuing reading this documentation
+Find here some notes and guides about the main features of ioChem-BD, how to use it, how to install it.
+
+Please, before continuing reading this documentation, consider reading the [Basic introduction to ioChem-BD](/platform-introduction.md). 
 
 ### Usage
 
-Overview of the common day-to-day operations in the platform, for final users.
+Overview of the common day-to-day operations \(for final users\)
 
 * [Create module](/usage/create-module-walktrough.md) walktrough
 * [Uploading content](/usage/uploading-content-to-create.md) into Create
-  * From [web interface](/usage/uploading-content-to-create/using-web-interface.md)
-  * From [shell client](/usage/uploading-content-to-create/using-web-interface.md)
+  * From the Create  [web interface](/usage/uploading-content-to-create/using-web-interface.md)
+  * From a Linux [shell client](/usage/uploading-content-to-create/using-web-interface.md)
 * [Publishing calculations](/usage/publishing-calculations.md) into Browse
 * [Generating reports](/usage/generating-reports.md)
-* FAQ
+* FAQs
+
+### **Technical info**
+
+What data is captured, how, and how is it shown \(for advanced users/programmers\) 
+
 * Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
 
 ### Installation

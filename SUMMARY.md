@@ -1,6 +1,6 @@
 # Summary
 
-## ioChem-BD platform
+## ioChem-BD Docs
 
 * [Home](README.md)
 * [About](platform-introduction.md)
@@ -16,7 +16,7 @@
 * [Publishing calculations](usage/publishing-calculations.md)
   * [Embargo](usage/publishing-calculations/embargo.md)
 * [Generating reports](usage/generating-reports.md)
-* [FAQ](https://faq.iochem-bd.org)
+* [FAQs](https://faq.iochem-bd.org)
 
 ## Installation
 
@@ -36,6 +36,4 @@
   * [Purchase new CA certificate ](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
     * [Validate domain owner](other-operations/validate-domain-owner.md)
   * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
-
-
 
