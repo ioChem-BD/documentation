@@ -28,8 +28,6 @@
 * [Define backup policy](backup-policy.md)
 * [Post installation check steps](installation/post-installation-check-steps.md)
 
-
-
 ## Advanced system configuration
 
 * [Customizing user interface](advanced-system-configuration/customizing-system-interface.md)
