@@ -6,17 +6,17 @@ The concepts underlying this software span from the definition of standards to t
 ioChem-BD automatizes relevant data-extracting processes and transforms numerical data into labeled data in a database. This platform provides the researcher with tools for validating, enriching, publishing and sharing information, as well as tools in the cloud to access and visualize data. The final goal is to build a new reference tool in research, bibliography management and services to third parties. Potential users include computational chemistry research groups worldwide, university libraries and related services, and high performance supercomputer centers. 
 ![none|frame|ioChem-BD function overview diagram](/images/IoChem-BD_diagram.png "wikilink") <span id="modular"></span>
 ##Modular architecture
-This chemical software is split into two modules: Create and Browse. Each one has different objectives in managing chemistry digital assets, and they both complement each other.
+The taks available in the repository are actually provided by different modules: Create, Browse and Find. Each one has different objectives in managing chemistry digital assets, and they both complement each other.
 ### Create module
-This web service is intended for private use inside your institution. It is fed with calculations uploaded via a web browser or from HPC clusters via a shell client, see [calculation upload page](/usage/uploading-content-to-create.md).
+This web service is intended for private use. It is fed with calculations uploaded via a web browser or from HPC clusters via a Linux shell client, see [calculation upload page](/usage/uploading-content-to-create.md).
 Features:
    * Private interface, content accessed by user permission only
    * Productivity-oriented GUI designed using the zKoss framework
-   * Automated document, data graph/chart generation: PDF files of supporting information reports, energy reaction profiles, etc ...
+   * Automated document, data graph/chart generation: PDF files of supporting information reports, reaction energy profiles, etc ...
    * Search by keywords, chemical substructure and administrative metadata
    * Compact and intuitive design
 
-The data are structured inside this module using **projects** and **calculations**, like folders and files inside a file system. Each calculation has to be enclosed inside a project, and a project can be on the root of the project or enclosed inside another project as a subproject. Data organization is totally left to the user's own criteria.
+The data is structured inside this module using **projects** and **calculations**, like folders and files inside a file system. Each calculation has to be enclosed inside a project, and a project can be on the root of the project or enclosed inside another project as a subproject. Data organization is totally left to the user's own criteria.
 ### Browse module
 This web service is intended for public access. It is fed with projects and calculations published from the Create module.
 The Browse module uses **Community**, **collection** and **item** entities to manage information.
