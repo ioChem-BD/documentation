@@ -2,7 +2,7 @@
 
 Find here some notes and guides about the main features of ioChem-BD, how to use it, how to install it.
 
-Please, before continuing reading this documentation, consider reading the [Basic introduction to ioChem-BD](/platform-introduction.md). 
+Please, before continuing reading this documentation, consider reading the [Basic introduction to ioChem-BD](/platform-introduction.md).
 
 ### Usage
 
@@ -18,13 +18,13 @@ Overview of the common day-to-day operations \(for final users\)
 
 ### **Technical info**
 
-What data is captured, how, and how is it shown \(for advanced users/programmers\) 
+What data is captured, how, and how is it shown \(for advanced users/programmers\)
 
 * Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
 
 ### Installation
 
-Steps required to deploy ioChem-BD software into a server. Exclusively for system administrators.  
+Steps required to deploy ioChem-BD software \(exclusively for system administrators\)  
   1. [System requirements](/system-requirements.md)  
   2. [Required steps](/installation/required_steps.md) prior to installation  
   3. [Installation](/installation/installation.md) procedure  
@@ -34,7 +34,7 @@ Steps required to deploy ioChem-BD software into a server. Exclusively for syste
 
 ### Advanced system configuration
 
-Specific and non-standard operations. Exclusively for system administrators.
+Specific and non-standard operations \(exclusively for system administrators\)
 
 * [Customizing system](/advanced-system-configuration/customizing-system-interface.md) interface
 * [Replace HTTPS certificate](/other-operations/replace-https-certificate.md)
