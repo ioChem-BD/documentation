@@ -13,7 +13,7 @@ The hierarchy inside Browse is really up to administrator's choice and needs. He
     Institute of Chemical Research of Catalonia
     ├── Carles Bo group
     │   ├── Bandeira, Nuno
-    │   ├── Gonzalez Fabra , Joan
+    │   ├── Gonzalez-Fabra, Joan
     │   ├── Melgar, Dolores
     │   └── Serapian, Stefano
     ├── Feliu Maseras group
@@ -33,7 +33,7 @@ The hierarchy inside Browse is really up to administrator's choice and needs. He
 ```code
     Carles Bo group
     ├── Bandeira, Nuno
-    ├── Gonzalez Fabra , Joan
+    ├── Gonzalez-Fabra, Joan
     ├── Melgar, Dolores
     └── Serapian, Stefano
     Feliu Maseras group
@@ -58,7 +58,7 @@ The hierarchy inside Browse is really up to administrator's choice and needs. He
     ├── Capdevial, Maçal
     ├── Fernandez, Victor
     ├── Garcia, Miquel Alexandre
-    ├── Gonzalez Fabra , Joan
+    ├── Gonzalez-Fabra, Joan
     ├── Kuniyil, Rositha
     ├── Lakuntza, Oier
     ├── Li, Qiang

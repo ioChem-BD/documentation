@@ -1,4 +1,4 @@
-##Shell client commands
+##Shell commands
 All commands described here allow **-h** parameter that will display a help message containing a wider description of its usage.
 ### Basic parameters
 

@@ -1,11 +1,10 @@
 ##Shell automated scripts
-All ioChem-BD shell client commands can be shell-scripted to ease its upload into the Create module in an automated way.
-First we will present a few helper scripts that will assist you when loading calculations into the Create module by reducing the number of parameters passed (when needed) and by setting default values on undefined parameters. All of them are contained in the shell client, [downloadable](/usage/uploading-content-to-create/using-shell-client.md#shell-client) from Create web page.
-At the end of this page, we will explain some basic scripts (customized for a specific calculation cluster) to guide you in the writing of your personalized upload scripts.
+All ioChem-BD shell client commands can be shell-scripted to ease upload files into the Create Module in an automated way. The API REST (under continous development) will provide more features.
+Find herein few helper scripts that will assist you when uploading calculations. By using scripts, uploading data automaticly is just a trivial exercise. All our shell commands are contained within the shell client, which is [downloadable](/usage/uploading-content-to-create/using-shell-client.md#shell-client) from your Create web page.
 Feel free to customize these scripts to fit your needs, or turn them into new ones. Set the **-v** parameter (verbose) on these scripts to display more information about each script mechanism. 
 
 ###loadadf
-Loads an ADF calculation into the the Create module, it can be used standalone as other shell client commands or it can be attached to a job script to be automatically uploaded after the calculation has finished.
+Loads an ADF calculation into the the Create module.
 
 | Parameters    | Description          |
 |---------------|-------------------------------|
@@ -16,20 +15,19 @@ Loads an ADF calculation into the the Create module, it can be used standalone a
 | -d *desc*     | Description of the calculation in the data base (optional), if not defined will use parent folder name  |
 | --auto        | Autogenerate current path into Create module (optional). Refer to [-auto](/#auto "wikilink") parameter section. |
 
-If parameters **-i** and **-o** are not set, it will look for *input.in* and *output.out* files, if they are missing, the upload will be aborted. If we use another naming convention just edit the *loadadf* script file and replace default file names.
+If parameters **-i** and **-o** are not set, this script will look for *input.in* and *output.out* files. If that info is missing, the upload process will be aborted. If you wish to use another naming convention just edit the *loadadf* script file and replace default file porper names.
 ```console
     # Default static file names, change them in order to fit your naming conventions
     INPUT_DEFAULT_FILENAME="input.in"
     OUTPUT_DEFAULT_FILENAME="output.out"
 ```
-If parameters **-n** and **-d** are not defined, the loadadf script will use the parent folder's name as calculation name and description.
-If a parameter value contains multiple words and blank spaces (like description), they must be enclosed inside double quotes.
+If parameters **-n** and **-d** are not defined, any ioChem-BD Module scripts will use the parent folder's name as calculation name and description.
 #####Examples 
-Upload calculation *a-pw12.opt* using *a-pw12.opt.in* and *a-pw12.opt.in* files
+Upload calculation *a-pw12* using *a-pw12.opt.in* and *a-pw12.opt.in* files
 ```console
-    $ loadadf -i a-pw12.opt.in -o a-pw12.opt.out -n "a-pw12 optimization" -d "Optimization a-pw12"
+    $ loadadf -i a-pw12.opt.in -o a-pw12.opt.out -n "a-pw12" -d "Optimization a-pw12"
 ```
-Upload calculation named *metane* using *me-mp2.in* and *me-mp2.in* files, name and description came from parent folder.
+Upload calculation named *metane* using *me-mp2.in* and *me-mp2.out* files; name and description are picked from the parent folder name.
 ```console
     $ pwd
     /home/user/Desktop/methane
@@ -39,7 +37,7 @@ Upload calculation named *a-pw12.opt* and attach additional file *report.pdf*
 ```console
     $ loadadf -i a-pw12.opt.in -o a-pw12.opt.out -a report.pdf -n a-pw12.opt -d "Optimization a-pw12"
 ```
-Upload calculation and automatically build its parent folder, calculation name and description will be same as parent folder
+Upload calculation and automatically build its parent folder.  calculation name and description will be same as parent folder
 ```console
     $ loadadf -i irc_ts2_09.in -o irc_ts2_09.out --auto
 ```
@@ -47,13 +45,13 @@ Upload calculation and automatically build its parent folder, calculation name a
 ###loadgauss
 Same parameters and functionalities than the [loadadf](#loadadf) script.
 
-> Note: Please always use **\#P** flag on Gaussian calculations. Link information is required by ioChem-BD to properly capture text information.
+> Note: Please always use **\#p** flag in your Gaussian calculations. Link information is required by ioChem-BD to properly capture Gaussian sections information.
 
 ###loadmolcas
 Same parameters and functionalities than the [loadadf](#loadadf) script.
 
 ###loadturbo
-Loads a Turbomole calculation into the Create module, it can be used standalone as other shell client commands or it can be attached to a job script to be automatically uploaded after the calculation has finished.
+Loads a Turbomole calculation into the Create Module. It can be used standalone as other shell client commands, or it can be attached to a job script to be automatically uploaded after the calculation has finished.
 
 | Parameters    | Description                                |
 |---------------|--------------------------------------------|
