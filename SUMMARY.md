@@ -17,7 +17,7 @@
 
 ## User manual
 
-* [Create module walktrough](usage/create-module-walktrough.md)
+* [Create module walkthrough](usage/create-module-walktrough.md)
 * [Uploading content](usage/uploading-content-to-create.md)
   * [From web interface](usage/uploading-content-to-create/using-web-interface.md)
   * [From shell client](usage/uploading-content-to-create/using-shell-client.md)
@@ -26,7 +26,7 @@
 * [Publishing calculations](usage/publishing-calculations.md)
   * [Embargo](usage/publishing-calculations/embargo.md)
 * [Generating reports](usage/generating-reports.md)
-* [FAQ](https://faq.iochem-bd.org "FAQ")
+* [FAQ](https://faq.iochem-bd.org)
 
 ## Advanced system configuration
 
