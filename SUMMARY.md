@@ -3,17 +3,7 @@
 ## ioChem-BD platform
 
 * [Home](README.md)
-* [Introduction](platform-introduction.md)
-
-## Installation
-
-* [System requirements](system-requirements.md)
-* [Steps prior installation](installation/required_steps.md)
-* [Installation procedure](installation/installation.md)
-  * [Creating users and groups](installation/user-and-group-generation.md)
-  * [Publishing endpoints definition](installation/publishing-endpoints-definition.md)
-* [Define backup policy](backup-policy.md)
-* [Post installation check steps](installation/post-installation-check-steps.md)
+* [About](platform-introduction.md)
 
 ## User manual
 
@@ -28,6 +18,18 @@
 * [Generating reports](usage/generating-reports.md)
 * [FAQ](https://faq.iochem-bd.org)
 
+## Installation
+
+* [System requirements](system-requirements.md)
+* [Steps prior installation](installation/required_steps.md)
+* [Installation procedure](installation/installation.md)
+  * [Creating users and groups](installation/user-and-group-generation.md)
+  * [Publishing endpoints definition](installation/publishing-endpoints-definition.md)
+* [Define backup policy](backup-policy.md)
+* [Post installation check steps](installation/post-installation-check-steps.md)
+
+
+
 ## Advanced system configuration
 
 * [Customizing user interface](advanced-system-configuration/customizing-system-interface.md)
@@ -36,4 +38,6 @@
   * [Purchase new CA certificate ](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
     * [Validate domain owner](other-operations/validate-domain-owner.md)
   * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
+
+
 
