@@ -4,6 +4,8 @@ Find here some notes and guides about the main features of ioChem-BD, how to use
 
 Please, before continuing reading this documentation, consider reading the [Basic introduction to ioChem-BD](/platform-introduction.md).
 
+---
+
 ### Usage
 
 Overview of the common day-to-day operations \(for final users\)
@@ -16,11 +18,15 @@ Overview of the common day-to-day operations \(for final users\)
 * [Generating reports](/usage/generating-reports.md)
 * FAQs
 
+---
+
 ### **Technical info**
 
 What data is captured, how, and how is it shown \(for advanced users/programmers\)
 
 * Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
+
+---
 
 ### Installation
 
@@ -31,6 +37,8 @@ Steps required to deploy ioChem-BD software \(exclusively for system administrat
   4. [User and group creation](/installation/user-and-group-generation.md)  
   5. Define [backup policy](/backup-policy.md)  
   6. [Post installation check steps](/installation/post-installation-check-steps.md)
+
+---
 
 ### Advanced system configuration
 
