@@ -1,7 +1,7 @@
 ### Upload content using the Create web interface
 ####Paths
 
-Any element within the Create module has an associated path to define its location in the filesystem structure. It can be visualized by looking on top of the *Item details* form: 
+Any element within the Create module has an associated path to define its location in our filesystem structure. It can be visualized by looking on top of the *Item details* form: 
 
 ![Element current path](/images/CreateDetailsPath.png)
 
