@@ -1,4 +1,4 @@
-# ioChem-BD documentation
+# ioChem-BD Docs
 
 #### Welcome
 

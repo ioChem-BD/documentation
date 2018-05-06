@@ -1,4 +1,4 @@
-###Using web interface
+### ... using Create web interface
 ####Paths
 
 All elements inside the Create module have an associated path to define its position among all others elements. It can be revised by looking on top of the *Item details* form: 
