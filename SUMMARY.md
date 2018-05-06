@@ -21,7 +21,7 @@
 
 ## Installation guide
 
-* 1- [System requirements](system-requirements.md)
+* [1- System requirements](system-requirements.md)
 * 2- [Steps prior installation](installation/required_steps.md)
 * 3- [Installation procedure](installation/installation.md)
   * [Creating users and groups](installation/user-and-group-generation.md)
