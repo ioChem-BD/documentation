@@ -1,7 +1,9 @@
 #About
-The massive use of simulation techniques in chemical research generates terabytes of information daily, which constitutes a serious problem known as Big Data. The main obstacle for managing large information volumes is their storage in such a way that facilitates data mining as an strategy to optimize the processes that will enable facing the challenges of a new sustainable society based on knowledge and the rational use of existing resources.
+ioChem-BD aims at creating a network of open-access distributed  repositories for a full management of digital chemistry files.
 
-The concepts underlying this project span from the definition of standards to the treatment, hierarchical storage and data recovery, and facilitating data mining of the Theoretical and Computational Chemistry's Big Data, having as main goal the creation of new methodological strategies that will promote an optimal reuse of results and accumulated knowledge. The present project aims at creating a distributed network of repositories for a full management of digital chemistry files.
+The primary concepts underlying this project span from the definition of standards to the treatment, hierarchical storage and data recovery, and facilitating data mining of the Theoretical and Computational Chemistry's Big Data, having as main goal the creation of new methodological strategies that will promote an optimal reuse of results and accumulated knowledge.
+
+ioChem-BD relies in an unique software platform which is builded in a modular way to satisfy all the needs. Data creation and curation, publishing, indexing data 
 
 The main node of the network runs the Find Module, which acts as central server and is feed by any new data published in the repositories. Find Module provides a fast chemical-aware search engine open public service and is hosted at the Barcelona Supercomputer Center (BSC). Also, the first public-access node provided by BSC.
 
