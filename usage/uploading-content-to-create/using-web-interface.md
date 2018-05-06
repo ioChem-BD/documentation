@@ -1,21 +1,21 @@
 ### Upload content using the Create web interface
 ####Paths
 
-Any element within the Create module has an associated path to define its location in our filesystem structure. It can be visualized by looking on top of the *Item details* form: 
+Any element within the Create module has an associated path to define its location in our filesystem structure. You can be discover it by looking at the top of the **Item Details** form: 
 
 ![Element current path](/images/CreateDetailsPath.png)
 
-Paths work the same way as OS folder/file paths, so you can navigate them up/down and inside/out.
-All paths start with a fixed string that contains the username: **/db/username**. This is defined as the root of your path, from here you can create all the projects you need.
+Paths work the same way as standard OS folder/file paths, so you can navigate them up/down and inside/out.
+All paths start with a fixed string that contains the Username: **/db/username**. This is defined as the root of your path, so  you can create the projects you need from here.
 
-> Note :  Calculations are not allowed to be uploaded in the root path. Calculations must be held inside a project.
+> Note :  Calculations are not allowed to be uploaded in the root path directly. Calculations must be held inside a project.
 
 ####Creating a project
-Projects created in the root path will be called root projects. To create them, you must first clear the current path by clicking the *Refresh* button, placed on top on the Navigation frame. 
+Projects created in the root path are be called root projects. To create any, you must first clear the current path by clicking the *Refresh* button (find it on top on the Navigation Frame). 
 ![Refresh and reset path button](/images/CreateNavigationTreeRefresh.png)
 
-With the current path cleared and set to root path, you can start filling in project details on the Item details frame.
-**Project name and description fields are mandatory**. No symbol characters can be used in the project name (as they are not allowed either in directory names inside current OS). ![Create project form, note root path on top](/images/CreateItemDetailsCreateProject.png) 
+With the current path cleared and set it to _root path_, you can start filling in the project details on the Item Details frame.
+**Project name** and **description fields** are mandatory. No symbol characters can be used in the project name (as they are not allowed either in directory names inside current OS). ![Create project form, note root path on top](/images/CreateItemDetailsCreateProject.png) 
 
 Once edited you must click on *Create project* button. Navigation frame will refresh our workspace and your project will appear inside the project hierarchy.
 To create subprojects inside an existing project, you need to click on that project and replace its name and description in the Item details frame, after that you can click on *Create project* and it will be generated inside the selected parent project.
