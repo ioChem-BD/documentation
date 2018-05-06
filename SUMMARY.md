@@ -13,9 +13,9 @@
   * [From shell client](usage/uploading-content-to-create/using-shell-client.md)
     * [Shell commands](usage/uploading-content-to-create/shell-commands.md)
     * [Shell automated scripts](usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
-* [Publishing calculations](usage/publishing-calculations.md)
+* [Publish a dataset](usage/publishing-calculations.md)
   * [Embargo](usage/publishing-calculations/embargo.md)
-* [Generating reports](usage/generating-reports.md)
+* [Generate reports](usage/generating-reports.md)
 * [FAQs](https://faq.iochem-bd.org)
 
 ## Installation

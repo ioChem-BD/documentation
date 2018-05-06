@@ -10,13 +10,13 @@ Please, before continuing reading this documentation, consider reading  [Basic i
 
 ### Usage
 
-Overview of the common day-to-day operations \(for final users\)
+Overview of  basic  operations \(for final users\)
 
-* [Create module](/usage/create-module-walktrough.md) walktrough
-* [Uploading content](/usage/uploading-content-to-create.md) into Create
-  * From the Create  [web interface](/usage/uploading-content-to-create/using-web-interface.md)
-  * From a Linux [shell client](/usage/uploading-content-to-create/using-web-interface.md)
-* [Publishing calculations](/usage/publishing-calculations.md) into Browse
+* [Create module walktrough](/usage/create-module-walktrough.md "Create")
+* [Uploading content into Create](/usage/uploading-content-to-create.md)
+  * [using the  Create  web interface](/usage/uploading-content-to-create/using-shell-client.md)
+  * [using a Linux shell client](/usage/uploading-content-to-create/using-shell-client.md)
+* [Publishing  into Browse](/usage/publishing-calculations.md)
 * [Generating reports](/usage/generating-reports.md)
 * FAQs
 
