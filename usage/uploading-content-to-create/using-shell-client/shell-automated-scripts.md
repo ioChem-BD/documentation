@@ -1,7 +1,6 @@
 ##Shell automated scripts
-All ioChem-BD shell client commands can be shell-scripted to ease its upload into the Create module in an automated way.
-First we will present a few helper scripts that will assist you when loading calculations into the Create module by reducing the number of parameters passed (when needed) and by setting default values on undefined parameters. All of them are contained in the shell client, [downloadable](/usage/uploading-content-to-create/using-shell-client.md#shell-client) from Create web page.
-At the end of this page, we will explain some basic scripts (customized for a specific calculation cluster) to guide you in the writing of your personalized upload scripts.
+All ioChem-BD shell client commands can be shell-scripted to ease upload files into the Create Module in an automated way. An API REST (under development) will provide more fratures.
+Find herein few helper scripts that will assist you when uploading calculations into the Create Module. Scripts will help reducing the number of parameters passed (when needed) and  setting default values on some parameters. All commands are contained in the shell client, which is [downloadable](/usage/uploading-content-to-create/using-shell-client.md#shell-client) from Create web page.
 Feel free to customize these scripts to fit your needs, or turn them into new ones. Set the **-v** parameter (verbose) on these scripts to display more information about each script mechanism. 
 
 ###loadadf
