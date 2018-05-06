@@ -11,7 +11,7 @@
 * [Upload content](usage/uploading-content-to-create.md)
   * [using Create web interface](usage/uploading-content-to-create/using-web-interface.md)
   * [using the Linux shell client](usage/uploading-content-to-create/using-shell-client.md)
-* The Linux shell client
+* [The Linux shell client](usage/the-linux-shell-client.md)
   * [Shell commands](usage/uploading-content-to-create/shell-commands.md)
   * [Shell automated scripts](usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
 * [Publish a dataset](usage/publishing-calculations.md)
