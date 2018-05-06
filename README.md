@@ -1,8 +1,8 @@
 # ioChem-BD documentation
 
-Welcome !
+Welcome
 
-Find here notes and guides about the some features of ioChem-BD, how to use it and eventually, how to install it .
+Find here notes and guides about ioChem-BD, how to use it and eventually, how to install it.
 
 Please, before continuing reading this documentation, consider reading  [Basic introduction to ioChem-BD](/platform-introduction.md).
 
