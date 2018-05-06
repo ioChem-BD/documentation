@@ -1,6 +1,6 @@
 # ioChem-BD documentation
 
-Welcome
+#### Welcome
 
 Find here notes and guides about ioChem-BD, how to use it and eventually, how to install it. Don't hesitate contacting us if  you need further information.
 
@@ -24,7 +24,7 @@ Overview of  basic  operations **\(for final users\)**
 
 ### **Technical info**
 
-What data is captured, how, and how is it shown **\(for advanced users/programmers\)**
+What data is captured, how, and how is it show **\(for advanced users/programmers\)**
 
 * Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
 
