@@ -5,12 +5,12 @@
 * [ ioChem-BD Docs](/README.md)
 * [About](platform-introduction.md)
 
-## User manual
+## User Guide
 
 * [Create module walkthrough](usage/create-module-walktrough.md)
-* [Uploading content](usage/uploading-content-to-create.md)
+* [Upload content](usage/uploading-content-to-create.md)
   * [using Create web interface](usage/uploading-content-to-create/using-web-interface.md)
-  * [From shell client](usage/uploading-content-to-create/using-shell-client.md)
+  * [using the Linux shell client](usage/uploading-content-to-create/using-shell-client.md)
 * The Linux shell client
   * [Shell commands](usage/uploading-content-to-create/shell-commands.md)
   * [Shell automated scripts](usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
@@ -19,7 +19,7 @@
 * [Generate reports](usage/generating-reports.md)
 * [FAQs](https://faq.iochem-bd.org)
 
-## Installation guide
+## Installation Guide
 
 * [1- System requirements](system-requirements.md)
 * [2- Steps prior installation](installation/required_steps.md)
@@ -35,6 +35,4 @@
   * [Purchase new CA certificate](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
   * [Validate domain owne](other-operations/validate-domain-owner.md)
   * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
-
-
 

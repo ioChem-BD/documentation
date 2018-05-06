@@ -15,8 +15,11 @@ Overview of  basic  operations **\(for final users\)**
 * [Create module walktrough](/usage/create-module-walktrough.md "Create")
 * [Uploading content into Create](/usage/uploading-content-to-create.md)
   * [using the  Create  web interface](/usage/uploading-content-to-create/using-shell-client.md)
-  * [using a Linux shell client](/usage/uploading-content-to-create/using-shell-client.md)
-* [Publishing  into Browse](/usage/publishing-calculations.md)
+  * [using the Linux shell client](/usage/uploading-content-to-create/using-shell-client.md)
+* The Linux shell client
+  * [Shell commands](/usage/uploading-content-to-create/using-shell-client.md)
+  * [Shell automated scripts](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
+* [Publish](/usage/publishing-calculations.md) [a  dataset Browse](/usage/publishing-calculations.md)
 * [Generating reports](/usage/generating-reports.md)
 * [FAQs](https://faq.iochem-bd.org)
 
