@@ -2,7 +2,7 @@
 
 ## ioChem-BD Docs
 
-* [Home](README.md)
+* [Intro to ioChem-BD Docs](/README.md)
 * [About](platform-introduction.md)
 
 ## User manual
@@ -36,4 +36,6 @@
   * [Purchase new CA certificate ](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
     * [Validate domain owner](other-operations/validate-domain-owner.md)
   * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
+
+
 
