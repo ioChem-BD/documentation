@@ -22,12 +22,12 @@
 ## Installation guide
 
 * [1- System requirements](system-requirements.md)
-* 2- [Steps prior installation](installation/required_steps.md)
-* 3- [Installation procedure](installation/installation.md)
+* [2- Steps prior installation](installation/required_steps.md)
+* [3- Installation procedure](installation/installation.md)
   * [Creating users and groups](installation/user-and-group-generation.md)
   * [Publishing endpoints definition](installation/publishing-endpoints-definition.md)
-* 4- [Define backup policy](backup-policy.md)
-* 5- [Post installation check steps](installation/post-installation-check-steps.md)
+* [4- Define backup policy](backup-policy.md)
+* [5- Post installation check steps](installation/post-installation-check-steps.md)
 * 6- Advanced system configuration
   * [Customizing user interface](advanced-system-configuration/customizing-system-interface.md)
   * [Replace HTTPS certificate](other-operations/replace-https-certificate.md)
