@@ -2,7 +2,7 @@
 
 #### Welcome
 
-Find here notes and guides about ioChem-BD, how to use it and eventually, how to install it. Don't hesitate contacting us if  you need further information.
+Find here notes and guides about ioChem-BD, how to use it and eventually, how to install it. Don't hesitate contacting us if you need further information.
 
 Please, before continuing reading this documentation, consider reading  [Basic introduction to ioChem-BD](/platform-introduction.md), and a paper published in J. Chem. Inf. Model.  [Managing the Computational Chemistry Big Data Problem: The ioChem-BD Platform](http://pubs.acs.org/doi/abs/10.1021/ci500593j).
 
@@ -30,7 +30,7 @@ What data is captured, how, and how is it show **\(for advanced users/programmer
 
 ---
 
-### Installation
+### Installation Guide
 
 Steps required to deploy ioChem-BD software **\(for system administrators\)**  
   1. [System requirements](/system-requirements.md)  
