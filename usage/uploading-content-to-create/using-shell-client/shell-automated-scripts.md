@@ -1,10 +1,10 @@
 ##Shell automated scripts
-All ioChem-BD shell client commands can be shell-scripted to ease upload files into the Create Module in an automated way. An API REST (under development) will provide more fratures.
-Find herein few helper scripts that will assist you when uploading calculations into the Create Module. Scripts will help reducing the number of parameters passed (when needed) and  setting default values on some parameters. All commands are contained in the shell client, which is [downloadable](/usage/uploading-content-to-create/using-shell-client.md#shell-client) from Create web page.
+All ioChem-BD shell client commands can be shell-scripted to ease upload files into the Create Module in an automated way. The API REST (under continous development) will provide more features.
+Find herein few helper scripts that will assist you when uploading calculations. By using scripts, uploading data automaticly is just a trivial exercise. All our shell commands are contained within the shell client, which is [downloadable](/usage/uploading-content-to-create/using-shell-client.md#shell-client) from your Create web page.
 Feel free to customize these scripts to fit your needs, or turn them into new ones. Set the **-v** parameter (verbose) on these scripts to display more information about each script mechanism. 
 
 ###loadadf
-Loads an ADF calculation into the the Create module, it can be used standalone as other shell client commands or it can be attached to a job script to be automatically uploaded after the calculation has finished.
+Loads an ADF calculation into the the Create module.
 
 | Parameters    | Description          |
 |---------------|-------------------------------|
@@ -15,14 +15,13 @@ Loads an ADF calculation into the the Create module, it can be used standalone a
 | -d *desc*     | Description of the calculation in the data base (optional), if not defined will use parent folder name  |
 | --auto        | Autogenerate current path into Create module (optional). Refer to [-auto](/#auto "wikilink") parameter section. |
 
-If parameters **-i** and **-o** are not set, it will look for *input.in* and *output.out* files, if they are missing, the upload will be aborted. If we use another naming convention just edit the *loadadf* script file and replace default file names.
+If parameters **-i** and **-o** are not set, this script will look for *input.in* and *output.out* files. If that info is missing, the upload process will be aborted. If you wish to use another naming convention just edit the *loadadf* script file and replace default file porper names.
 ```console
     # Default static file names, change them in order to fit your naming conventions
     INPUT_DEFAULT_FILENAME="input.in"
     OUTPUT_DEFAULT_FILENAME="output.out"
 ```
-If parameters **-n** and **-d** are not defined, the loadadf script will use the parent folder's name as calculation name and description.
-If a parameter value contains multiple words and blank spaces (like description), they must be enclosed inside double quotes.
+If parameters **-n** and **-d** are not defined, any ioChem-BD Module scripts will use the parent folder's name as calculation name and description.
 #####Examples 
 Upload calculation *a-pw12.opt* using *a-pw12.opt.in* and *a-pw12.opt.in* files
 ```console
