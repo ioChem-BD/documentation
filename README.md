@@ -18,13 +18,13 @@ Overview of  basic  operations **\(for final users\)**
   * [using a Linux shell client](/usage/uploading-content-to-create/using-shell-client.md)
 * [Publishing  into Browse](/usage/publishing-calculations.md)
 * [Generating reports](/usage/generating-reports.md)
-* FAQs
+* [FAQs](https://faq.iochem-bd.org)
 
 ---
 
 ### **Technical info**
 
-What data is captured, how, and how is it show **\(for advanced users/programmers\)**
+What data and how is it captured?  How is it further shown? **\(for advanced users/programmers\)**
 
 * Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
 
