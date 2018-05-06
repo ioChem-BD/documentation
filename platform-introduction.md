@@ -1,7 +1,5 @@
 #About
-ioChem-BD aims at creating a network of open-access distributed  repositories for a full management of digital chemistry files.
 
-The primary concepts underlying this project span from the definition of standards to the treatment, hierarchical storage and data recovery, and facilitating data mining of the Theoretical and Computational Chemistry's Big Data, having as main goal the creation of new methodological strategies that will promote an optimal reuse of results and accumulated knowledge.
 
 ioChem-BD relies in an unique software platform which is builded in a modular way to satisfy all the needs. Data creation and curation, publishing, indexing data 
 
