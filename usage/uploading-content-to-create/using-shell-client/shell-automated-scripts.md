@@ -23,11 +23,11 @@ If parameters **-i** and **-o** are not set, this script will look for *input.in
 ```
 If parameters **-n** and **-d** are not defined, any ioChem-BD Module scripts will use the parent folder's name as calculation name and description.
 #####Examples 
-Upload calculation *a-pw12.opt* using *a-pw12.opt.in* and *a-pw12.opt.in* files
+Upload calculation *a-pw12* using *a-pw12.opt.in* and *a-pw12.opt.in* files
 ```console
-    $ loadadf -i a-pw12.opt.in -o a-pw12.opt.out -n "a-pw12 optimization" -d "Optimization a-pw12"
+    $ loadadf -i a-pw12.opt.in -o a-pw12.opt.out -n "a-pw12" -d "Optimization a-pw12"
 ```
-Upload calculation named *metane* using *me-mp2.in* and *me-mp2.in* files, name and description came from parent folder.
+Upload calculation named *metane* using *me-mp2.in* and *me-mp2.out* files; name and description are picked from the parent folder name.
 ```console
     $ pwd
     /home/user/Desktop/methane
@@ -37,7 +37,7 @@ Upload calculation named *a-pw12.opt* and attach additional file *report.pdf*
 ```console
     $ loadadf -i a-pw12.opt.in -o a-pw12.opt.out -a report.pdf -n a-pw12.opt -d "Optimization a-pw12"
 ```
-Upload calculation and automatically build its parent folder, calculation name and description will be same as parent folder
+Upload calculation and automatically build its parent folder.  calculation name and description will be same as parent folder
 ```console
     $ loadadf -i irc_ts2_09.in -o irc_ts2_09.out --auto
 ```
@@ -45,13 +45,13 @@ Upload calculation and automatically build its parent folder, calculation name a
 ###loadgauss
 Same parameters and functionalities than the [loadadf](#loadadf) script.
 
-> Note: Please always use **\#P** flag on Gaussian calculations. Link information is required by ioChem-BD to properly capture text information.
+> Note: Please always use **\#p** flag in your Gaussian calculations. Link information is required by ioChem-BD to properly capture Gaussian sections information.
 
 ###loadmolcas
 Same parameters and functionalities than the [loadadf](#loadadf) script.
 
 ###loadturbo
-Loads a Turbomole calculation into the Create module, it can be used standalone as other shell client commands or it can be attached to a job script to be automatically uploaded after the calculation has finished.
+Loads a Turbomole calculation into the Create Module. It can be used standalone as other shell client commands, or it can be attached to a job script to be automatically uploaded after the calculation has finished.
 
 | Parameters    | Description                                |
 |---------------|--------------------------------------------|
