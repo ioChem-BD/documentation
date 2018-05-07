@@ -31,7 +31,7 @@
 * [8- Advanced system configuration](8-advanced-system-configuration.md)
   * [Customizing user interface](advanced-system-configuration/customizing-system-interface.md)
   * [Replace HTTPS certificate](other-operations/replace-https-certificate.md)
-  * [Associate with existing certificate](other-operations/replace-https-certificate/with-existing-certificate.md)
+  * [Associate an existing certificate](other-operations/replace-https-certificate/with-existing-certificate.md)
   * [Purchase new CA certificate](other-operations/replace-https-certificate/purchase-new-ca-certificate.md)
   * [Validate domain owne](other-operations/validate-domain-owner.md)
   * [Undo certificate generation process](other-operations/replace-https-certificate/undo-certificate-generation-process.md)
