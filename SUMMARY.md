@@ -14,7 +14,6 @@
 * [The Linux shell client](usage/the-linux-shell-client.md)
   * [Shell commands](usage/uploading-content-to-create/shell-commands.md)
   * [Shell automated scripts](usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md)
-    * loadadf
 * [Publish a dataset](usage/publishing-calculations.md)
   * [Set a dataset embargoed](usage/publishing-calculations/embargo.md)
 * [Generate reports](usage/generating-reports.md)
