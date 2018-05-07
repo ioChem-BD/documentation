@@ -1,9 +1,9 @@
 #About
 
 
-ioChem-BD relies in an unique software platform which is builded in a modular way to satisfy all the needs. Data creation and curation, publishing, indexing data 
+ioChem-BD relies in an unique software platform which is builded in a modular way to satisfy all the needs: data creation and curation, publishing, storage, indexing data and search engine services.
 
-The main node of the network runs the Find Module, which acts as central server and is feed by any new data published in the repositories. Find Module provides a fast chemical-aware search engine open public service and is hosted at the Barcelona Supercomputer Center (BSC). Also, the first public-access node provided by BSC.
+The main node of the network runs the Find Module, which acts as central server and is feed by any new data published in the repositories. The Find Module provides a fast chemical-aware search engine open public service and is hosted at the Barcelona Supercomputer Center (BSC). Also, the first public-access node is provided by BSC.
 
 Other ioChem-BD modules automatize relevant data-extracting processes and transforms raw numerical data into labeled data in a database.  It provides the researcher with tools for validating, enriching, publishing and sharing information, as well as tools to access, post-process and visualize data. The final goal is to contribute building a new reference tool in research. Users include computational chemistry research groups worldwide, university libraries and related services, and high performance supercomputer centers. 
 ![none|frame|ioChem-BD function overview diagram](/images/IoChem-BD_diagram.png "wikilink") <span id="modular"></span>
