@@ -29,7 +29,7 @@ Overview of  basic  operations **\(for final users\)**
 
 What data and how is it captured?  How is it further shown? **\(for advanced users/programmers\)**
 
-* Conversion [templates](http://www.iochem-bd.org/conversion/webhelp/index.html) reference
+* Conversion [templates](https://www.iochem-bd.org/index-conversion.jsp) reference
 
 ---
 
