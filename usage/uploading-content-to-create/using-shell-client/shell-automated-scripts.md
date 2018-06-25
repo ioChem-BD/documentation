@@ -404,7 +404,7 @@ Restrictions:
              echo "  Not matching output file "$outputfile
          else
              cd $folder
-             loadgauss --auto -i $inputfile -o $outputfile -n $filename -d $filename**
+             loadgauss --auto -i $inputfile -o $outputfile -n $filename -d $filename
          fi    
      done    
  done
