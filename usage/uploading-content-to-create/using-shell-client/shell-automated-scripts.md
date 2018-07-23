@@ -113,8 +113,8 @@ Loads a VASP calculation into the Create module, it can be used standalone as ot
 | -n            | Name of the calculation in the data base (optional), if not defined the calculations' output file name will be used                       |
 | -d *desc*     | Description of the calculation in the data base (optional), if not defined the calculations' file name will used.                         |
 | --auto        | Autogenerate current path into Create module (optional). Refer to the [-auto](/#auto "wikilink") parameter section.                       |
-| -neb          | Upload Nudged Elastic Band calculation, see more at: [Uploading NEB/DIM calculations section](#uploading-vasp-neb-dim-calculation) |
-| -dim          | Upload Dimmer calculation, see more at: [Uploading NEB/DIM calculations section](#uploading-vasp-neb-dim-calculation)              |
+| -neb          | Upload Nudged Elastic Band calculation, see more at: [Uploading NEB/DIM calculations section](#neb) |
+| -dim          | Upload Dimmer calculation, see more at: [Uploading NEB/DIM calculations section](#dim)              |
 
 ##### Examples
 

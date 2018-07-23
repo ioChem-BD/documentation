@@ -26,6 +26,7 @@ All commands described here allow **-h** parameter that will display a help mess
 | Command                                                    | Description                        |
 |------------------------------------------------------------|------------------------------------|
 | [viewcalc](#viewcalc)                          | View calculation information       |
+| [mcalc](#mcalc)                                | Modify a calculation |
 | [dcalc](#dcalc)                                | Delete calculation from repository |
 | [loadcalc](#loadcalc)                          | Load calculation into repository   |
 | Calculation type specific commands                         |                                    |
@@ -172,6 +173,22 @@ This comands displays the most relevant information about a calculation.
 |------------|-----------------------------------------------|
 | -n *path*  | Relative or absolute project path (mandatory) |
 | -f         | If present shows full contents. (optional)    |
+
+###mcalc
+Modifies the selected calculation properties, name, description or even moves it to another project.
+
+| Parameters           | Description                                         |
+|----------------------|-----------------------------------------------------|
+| -n *path*            | Relative or absolute calculation path (mandatory)       |
+| -nn *name*           | New Name of the calculation (optional)                  |
+| -np *path*           | New Parent project (absolute path) (optional)       |
+| -d *description*     | New description of the calculation (optional)               |
+
+|Examples  |       |
+|----------|-------|
+| *user$* mcalc -n /db/user/metOH-oxidation/freq1 -nn freq2 | Replaces calculation name by freq2 |
+| *user$* mcalc -n /db/user/metOH-oxidation/freq1 -np /db/user/alcohols | Moves selected calculation to another project |
+| *user$* mcalc -n /db/user/metOH-oxidation/freq1 -d "Another description" | Replaces description on selected calculation |
 
 ###dcalc
 This comands deletes a calculation given its name.
