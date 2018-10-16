@@ -53,7 +53,7 @@ The next tab has two options:
    * Generate DOI for top projects: will request a DOI identifier that points to the published collection
    * Embargo published elements: if marked, all published elements will be embargoed.
 
-DOI determination can take some minutes to resolver because it requires to contact third party services (CrossRef). Once DOI has been assigned, you will receive an email with the DOI for the published collection.
+DOI determination can take some minutes to resolve because it requires to contact third party services (CrossRef). Once DOI has been assigned, you will receive an email with the DOI for the published collection.
 The second option will allow you to embargo (restrict) the access to your published content.You can read more about the embargo feature [on this page](/usage/publishing-calculations/embargo.md). 
 
 ![Publication details tab](/images/PublicationOptions2.png)
