@@ -5,7 +5,7 @@ The Browse module content is publicly accessible by anonymous users, the Create 
  * [Creating groups](#creating-groups)
 
 
-##</a>Administrator login
+##Administrator login
 The next steps will be performed on the Browse module and from an administrator account, the same that we would have defined during installation.
 First, we will login by clicking on upper right menu bar "Sign on to" -&gt; "Browse module" button.
 
