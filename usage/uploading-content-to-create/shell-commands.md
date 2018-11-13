@@ -48,15 +48,15 @@ Used to connect to the repository, it must be always preceded by **source** or *
 ###lspro
 Displays content of current path: projects and calculations. Otherwise we can define a path to list its content.
 
-| Parameters | Description  |                                                                                                  
+| Parameters | Description  |
 |------------|--------------|
-| -n *path*  | Relative or absolute path project (optional) |                                                           
+| -n *path*  | Relative or absolute path project (optional) |
 | -f         | Display long format in listing (optional)    |
 | -o *order* | Order by. Possible values:<br/> n-&gt;name, * o-&gt;owner, g-&gt;group<br/>t-&gt;time, c-&gt;concept, * s-&gt;state (optional) |
 
 |Examples: |        |
 |----------|-------|
-| *user$* lspro | Sample listing in current path | 
+| *user$* lspro | Sample listing in current path |
 | *user$* lspro -n /db/username/hexenol | Lists by name the content of hexenol project (absolute path)|
 | *user$* lspro -o Sc2C82 | Lists by owner the content of hexenol project (relative to current path) |
 
@@ -245,11 +245,11 @@ This is a generic command that will allow us to upload multiple files and format
 | *user$*   loadcalc -i control -o job.last -oc coords -oe energy -ob basis -n Fe_Bipy -d Fe_Bipy | Upload **Turbomole** calculation and set its name to Fe_Bipy |
 | *user$*   loadcalc -i INCAR -o OUTCAR -n NO_dim -d NO_dim | Upload **VASP** calculation and set its name to NO_dim |
 
-To ease the usage of this command we have developed a group of helper Linux scripts to simplify shell upload 
+To ease the usage of this command we have developed a group of helper Linux scripts to simplify shell upload
 
 | Script                     | Function |
 |----------------------------|----------|
 | [loadadf](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgauss) | Upload **ADF** calculation             |
-| [loadgauss](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgauss) | Upload **Gaussian** calculation |                                    
+| [loadgauss](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgauss) | Upload **Gaussian** calculation |
 | [loadturbo](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadturbo) | Upload **Turbomole** calculation|
 | [loadvasp](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadvasp)   | Upload **Vasp** calculations (Nudge Elastic Band and Dimmer are also included) |

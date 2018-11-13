@@ -1,7 +1,7 @@
 ### Upload content using the Create web interface
 ####Paths
 
-Any element within the Create module has an associated path to define its location in our filesystem structure. You can be discover it by looking at the top of the **Item Details** form: 
+Any element within the Create module has an associated path to define its location in our filesystem structure. You can be discover it by looking at the top of the **Item Details** form:
 
 ![Element current path](/images/CreateDetailsPath.png)
 
@@ -11,11 +11,11 @@ All paths start with a fixed string that contains the Username: **/db/username**
 > Note :  Calculations are not allowed to be uploaded in the root path directly. Calculations must be held inside a project.
 
 ####Creating a project
-Projects created in the root path are be called root projects. To create any, you must first clear the current path by clicking the *Refresh* button (find it on top on the Navigation Frame). 
+Projects created in the root path are be called root projects. To create any, you must first clear the current path by clicking the *Refresh* button (find it on top on the Navigation Frame).
 ![Refresh and reset path button](/images/CreateNavigationTreeRefresh.png)
 
 With the current path cleared and set it to _root path_, you can start filling in the project details on the Item Details frame.
-**Project name** and **description fields** are mandatory. No symbol characters can be used in the project name (as they are not allowed either in directory names inside current OS). ![Create project form, note root path on top](/images/CreateItemDetailsCreateProject.png) 
+**Project name** and **description fields** are mandatory. No symbol characters can be used in the project name (as they are not allowed either in directory names inside current OS). ![Create project form, note root path on top](/images/CreateItemDetailsCreateProject.png)
 
 When you are ready editing, then you must click on *Create project* button. Navigation Frame will refresh the workspace and your project will appear in the project hierarchy.
 

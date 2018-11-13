@@ -1,7 +1,7 @@
 ##Shell automated scripts
 All ioChem-BD shell client commands can be shell-scripted to ease upload files into the Create Module in an automated way. The API REST (under continous development) will provide more features.
 Find herein few helper scripts that will assist you when uploading calculations. By using scripts, uploading data automaticly is just a trivial exercise. All our shell commands are contained within the shell client, which is [downloadable](/usage/uploading-content-to-create/using-shell-client.md#shell-client) from your Create web page.
-Feel free to customize these scripts to fit your needs, or turn them into new ones. Set the **-v** parameter (verbose) on these scripts to display more information about each script mechanism. 
+Feel free to customize these scripts to fit your needs, or turn them into new ones. Set the **-v** parameter (verbose) on these scripts to display more information about each script mechanism.
 
 ###loadadf
 Loads an ADF calculation into the the Create module.
@@ -22,7 +22,7 @@ If parameters **-i** and **-o** are not set, this script will look for *input.in
     OUTPUT_DEFAULT_FILENAME="output.out"
 ```
 If parameters **-n** and **-d** are not defined, any ioChem-BD Module scripts will use the parent folder's name as calculation name and description.
-#####Examples 
+#####Examples
 Upload calculation *a-pw12* using *a-pw12.opt.in* and *a-pw12.opt.in* files
 ```console
     $ loadadf -i a-pw12.opt.in -o a-pw12.opt.out -n "a-pw12" -d "Optimization a-pw12"
@@ -77,7 +77,7 @@ If parameters **-i** and **-o** are not set, it will look by default for *contro
 If parameters -n and -d are not defined, the loadturbo script will use the parent folder's name as calculation name and description.
 If a parameter value contains multiple words and blank spaces (like description), they have to be enclosed inside double quotes.
 
-##### Multiple step calculation 
+##### Multiple step calculation
 On calculations that generate multiple output files like dscf, escf, we can upload them as a unique file by joining its output files into one. We do so by repeating the -o parameter with the name of each output file. Must be defined in the same order as they were generated. Example:
 ```control
     $ loadturbo -i control -o dscf.out -o escf.out
@@ -270,11 +270,11 @@ If we want to exclude *mnt_cluster* folder or our folder is mounted in another p
   # On auto mode we will generate a project path, navigate inside and then upload calculation
    if [ $auto -gt 0 ]; then
        moveBasePath
-       full_path="$(cd "$(dirname "$output")"; pwd)"   # Will use 'output' file parent folders 
+       full_path="$(cd "$(dirname "$output")"; pwd)"   # Will use 'output' file parent folders
        home_path="$(cd $HOME_PATH/mnt_cluster; pwd)"   # Set this home_path if uploading from /home/user/mnt_cluster
        home_path="$(cd /mnt/cluster; pwd)"             # Set this home_path if uploading from /mnt/cluster
-   
-   
+
+
        partial_path="${full_path/$home_path/''}"         # Remove user home folder
        partial_path="${partial_path//[-@\$\%\& \"]/_}"   # Replace special characters and blank spaces by underscore
        if [ $verbose -gt 0 ]; then
@@ -282,19 +282,19 @@ If we want to exclude *mnt_cluster* folder or our folder is mounted in another p
        fi
        projects=$(echo $partial_path | tr "/" "\n")
        for project in $projects
-       do              
+       do
            if [ $project = "''" -o $project = "" ]; then
              continue
            fi
            project="${project//[-@\$\%\&\"\' ]/_}"
-           createpro="cpro -n "$project" -d "$project  
-           changepro="cdpro "$project                       
-           executeRepCommand "$REP_SCRIPTS/exe-rep-command $changepro" ""     # Try cdpro to project, if it fails, we'll create this project           
-           if [ ! $retval -eq  0 ]; then                 
+           createpro="cpro -n "$project" -d "$project
+           changepro="cdpro "$project
+           executeRepCommand "$REP_SCRIPTS/exe-rep-command $changepro" ""     # Try cdpro to project, if it fails, we'll create this project
+           if [ ! $retval -eq  0 ]; then
            executeRepCommand "$REP_SCRIPTS/exe-rep-command $createpro" ""
                executeRepCommand "$REP_SCRIPTS/exe-rep-command $changepro" ""
-           fi  
-       done 
+           fi
+       done
    fi
 ```
 
@@ -311,10 +311,10 @@ In these examples, we consider that the shell client resides on *$HOME/shell*:
    #$ -pe smp* 12
    #$ -N test
    #$ -cwd
-   
+
    input=input.in
    output=output.out
-   
+
    /home/programs/bin/gaussian09.sh C01 $input $output
    . $HOME/shell/start-rep-shell                                            #  (1)
    loadgauss -i $input -o $output -n $output -d $output --auto              #  (2)
@@ -330,18 +330,18 @@ Numbered lines do:
 #####Turbomole job submit file example
 ```control
    #!/bin/bash
-   
+
    #$ -pe smp* 1-
    #$ -cwd
    #$ -q mag14.q
-   
+
    . /home/programs/bin/turbomole.sh 6.6
-   
+
    export TURBOTMPDIR=$TMPDIR
-   
+
    cp HILL/* .
    /usr/bin/time -o time_output dscf
-   
+
    output=$(basename $SGE_STDOUT_PATH)
    . $HOME/shell/start-rep-shell          # (1)
    loadturbo -o $output --auto            # (2)
@@ -367,7 +367,7 @@ We can customize which input and output files are captured setting wildcards **\
 ```console
    #!/bin/bash
    . start-rep-shell                           # <--- Please append full path to start-rep-shell command
-    for folder in $(find  `pwd` -type d); do 
+    for folder in $(find  `pwd` -type d); do
         echo "Processing folder :" $folder
         inputfile="$(find  $folder -maxdepth 1  -name '*.in' -printf "%f\n")"
         outputfile="$(find $folder -maxdepth 1  -name '*.out' -printf "%f\n")"
@@ -395,8 +395,8 @@ Restrictions:
  INPUT_FILE_EXTENSION=in
  OUTPUT_FILE_EXTENSION=out
  . start-rep-shell                         # <--- Please append full path to start-rep-shell command
-  for folder in $(find  `pwd` -type d); do 
-     echo "Processing folder :" $folder    
+  for folder in $(find  `pwd` -type d); do
+     echo "Processing folder :" $folder
      for inputfile in $(find  $folder -maxdepth 1  -name "*.$INPUT_FILE_EXTENSION" -printf "%f\n"); do
          filename=$(echo $inputfile | sed "s/\.$INPUT_FILE_EXTENSION//")
          outputfile="$filename.$OUTPUT_FILE_EXTENSION"
@@ -405,8 +405,8 @@ Restrictions:
          else
              cd $folder
              loadgauss --auto -i $inputfile -o $outputfile -n $filename -d $filename
-         fi    
-     done    
+         fi
+     done
  done
  exit-rep
 ```

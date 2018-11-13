@@ -1,8 +1,8 @@
 ### Shell client
 
-Our unique Linux shell client is intented to be deployed into your Linux box, where your calculations are generated and reside, or  on a \*nix machine where calculations are visible. 
+Our unique Linux shell client is intented to be deployed into your Linux box, where your calculations are generated and reside, or  on a \*nix machine where calculations are visible.
 
-First we need to download the shell client into that box. To do so, you will first login in your Create Module.  
+First we need to download the shell client into that box. To do so, you will first login in your Create Module.
 Then you click on _Options_ in upper right menu bar. You need to selecy  _Download shell client_ so that it displays a form that will request your ioChem-BD password, the same that you used to login.
 
 ![Options menu bar](/images/WebUploadForm5.png)
@@ -27,7 +27,7 @@ The next step is to connect to the Create module via our Linux shell client. Cal
     $ source start-rep-shell
 ```
 
-**Note:** Not using _source \(_or _dot\) _ before the _start-rep-shell_ command will produce connection error events. It is mandatory to append the "source" command to start any remote connection properly.  
+**Note:** Not using _source \(_or _dot\) _ before the _start-rep-shell_ command will produce connection error events. It is mandatory to append the "source" command to start any remote connection properly.
 
 
 More infornation: [Shell commands](/usage/uploading-content-to-create/shell-commands.md)

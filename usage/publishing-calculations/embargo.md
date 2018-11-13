@@ -6,11 +6,11 @@ In this case the users who are publishing to Browse module must activate the che
 
 ![](/images/PublicationOptions2a.png)
 
-With this option activated, published elements will be visible inside its collection. 
+With this option activated, published elements will be visible inside its collection.
 
 ![](/images/embargoed-collection.png)
 
-But will request for validation when trying to access any individual item. 
+But will request for validation when trying to access any individual item.
 
 ![](/images/LoginRequired.png)
 
@@ -29,7 +29,7 @@ After publishing embargoed content from Create module, this links are displayed 
 Users can recover this links anytime on Create module by clicking on the black icon next to the project.
 
 ![This links point to the Edit Collection page](/images/EditPublishedElement.png "wikilink")
- 
+
 On the edit collection page, users can modify certain aspects of the published elements and also retrieve the Embargo link, this link won't appear if the collection doesn't have embargoed elements
 ![](/images/EditCollection3.png)
 
@@ -37,6 +37,6 @@ On the edit collection page, users can modify certain aspects of the published e
 
 Once the content has been validated/reviewed, users can lift the embargo on the same *Edit collection* page . Clicking this button will lift the embargo on the collection:
 
-![](/images/EditCollection4.png) 
+![](/images/EditCollection4.png)
 
 When the embargo is lifted, the embargo section on *Edit collection* page won't appear and review links will cease to work.

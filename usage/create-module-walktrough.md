@@ -1,6 +1,6 @@
 # Create module walkthrough
 
-The Create module is a single-page web application aimed at managing input and output files from computational chemistry research work, and to generate derived content from it. Create allows uploading, organizing, visualizing and curing your data, and share it with your project mates.  
+The Create module is a single-page web application aimed at managing input and output files from computational chemistry research work, and to generate derived content from it. Create allows uploading, organizing, visualizing and curing your data, and share it with your project mates.
 ![Create module main page](/images/CreateMain.png)
 
 The window is composed of three frames, some with several tabs:
@@ -16,21 +16,21 @@ The window is composed of three frames, some with several tabs:
 This frame is the entry point of all managing functionalities of the Create module. Three tabs allow us to select the current operative mode:
 
 * Navigation
-* Search 
+* Search
 * Reports
 
-To switch between modes, the user only has to click on each tab:  
+To switch between modes, the user only has to click on each tab:
 ![Mode switch tabs](/images/CreateNavigationTabs.png)
 
 ### Navigation/Edition mode
 
-The Navigation tab will display a navigation tree composed of nodes and leaves. From now on we will call it our _workspace_.  
-![Project and calculation navigation tree](/images/CreateNavigationTreeElements.png)  
+The Navigation tab will display a navigation tree composed of nodes and leaves. From now on we will call it our _workspace_.
+![Project and calculation navigation tree](/images/CreateNavigationTreeElements.png)
 Each node represents what we call a **project**. This is just a container element, like a folder, and can contain other subprojects or simply  a set of single calculations, which are the basic element of your data. A calculation usually contains input files, CML converted output files, additional files, etc ... Navigation tab is the place to gather calculations and organize your data sets in the way you want to eventually publish them.
 
-  
-We can easily recognize projects inside the workspace by looking at the _Type_ column as they are labeled as _PRO_. Another way to recognize them \(when they contain child elements\) is by a small arrow next to their name. When clicking on it the project's content will expand or collapse.  
-Each leaf represents a **calculation**. It is an ending point and nothing can hang from it. This item represents all data associated to a single calculation, which comes straight from the output of computational chemistry packages.  
+
+We can easily recognize projects inside the workspace by looking at the _Type_ column as they are labeled as _PRO_. Another way to recognize them \(when they contain child elements\) is by a small arrow next to their name. When clicking on it the project's content will expand or collapse.
+Each leaf represents a **calculation**. It is an ending point and nothing can hang from it. This item represents all data associated to a single calculation, which comes straight from the output of computational chemistry packages.
 By selecting a calculation, both the Item Actions frame and the Item Details frame get actualized and display additional data. We can easily discover the original software package used to run that  calculation by looking at the _Type_ column value:
 
 * ADF: Calculation generated with [Amsterdam Density functional](https://www.scm.com/) software package
@@ -45,7 +45,7 @@ Other interesting columns that are worth explaning are:
 * Description: Text about the project/calculation \(special symbols are allowed\).
 * Status: Current element status. Possible values: created/published.
 * Handle: Unique identifier of each published element, which can be accessed from the Browse module.This topic will be explained in depth in the section [Publishing Calculations into Browse](/usage/publishing-calculations.md)
-* Published flag 
+* Published flag
 
 There is a context menu to help with repetitive actions. For any element inside the workspace, you have to first select it clicking left click, and then right click it to see its available options in the context menu.
 
@@ -55,7 +55,7 @@ Read the [Publishing Calculations](/usage/publishing-calculations.md) section or
 
 ### Search mode
 
-The Search tab will display a form where the user can query all uploaded projects/calculations. Multiple filters are available to refine queries.  
+The Search tab will display a form where the user can query all uploaded projects/calculations. Multiple filters are available to refine queries.
 Currently, only filter by administrative metadata:
 
 * Name and description of the element, partial text matching search.
@@ -67,12 +67,12 @@ Currently, only filter by administrative metadata:
 * Creation, modification dates
 * Current element state
 
-**IMPORTANT: Note that by enriching the Description field with meaningful information will allow you to look for those concepts when performing a search.**  
+**IMPORTANT: Note that by enriching the Description field with meaningful information will allow you to look for those concepts when performing a search.**
 ![Multiple field search form](/images/CreateSearchForm.png)
 
-After setting the search parameters you whish, click the _Search_ button to perform a query. A list of results will appear.  
-![](/images/CreateSearchFormResults.png)  
-We can click on any listed element to display its particular Item actions and details.  
+After setting the search parameters you whish, click the _Search_ button to perform a query. A list of results will appear.
+![](/images/CreateSearchFormResults.png)
+We can click on any listed element to display its particular Item actions and details.
 To perform a new query, the _Reset search_ button will clean the form and will bring you back to Search form.
 
 ### Report mode
@@ -81,8 +81,8 @@ This tab activates advanced operatives to process sets of calculations. This mod
 
 ## Item Actions frame
 
-This part of Create is in charge of displaying all actions related to a selected element in the Navigation/Search frames.  
-Projects do not have any specific action associated. By selecting a project, it will display the initial news page.  
+This part of Create is in charge of displaying all actions related to a selected element in the Navigation/Search frames.
+Projects do not have any specific action associated. By selecting a project, it will display the initial news page.
 Calculations have the following actions, which are accessible in the tabs of this frame:
 
 * 3D structure
@@ -92,8 +92,8 @@ Calculations have the following actions, which are accessible in the tabs of thi
 
 ### 3D structure
 
-This action displays the molecular structure or simulation cell.In the case of geometry optimization runs, it will show the final geometry. In the case of NEB calculations run with VASP, a special tab will allow visualizing all the points.  
-We use JSmol \(Javascript version of Jmol\) to display such structures \(and their cells in the case of periodic systems\).  
+This action displays the molecular structure or simulation cell.In the case of geometry optimization runs, it will show the final geometry. In the case of NEB calculations run with VASP, a special tab will allow visualizing all the points.
+We use JSmol \(Javascript version of Jmol\) to display such structures \(and their cells in the case of periodic systems\).
 Common JSmol operations:
 
 * Hold left click + drag = Rotate molecule
@@ -132,12 +132,12 @@ This action displays calculation files content inside a text area. On large file
 
 ## Item Details frame
 
-Any  project or calculation selected in our workspace will immediately refresh this form, displaying its administrative metadata.  
-Some fields are modifiable f. ex. name, description, owner group, assigned permissions. Other fields are fixed like owner user or creation date.  
+Any  project or calculation selected in our workspace will immediately refresh this form, displaying its administrative metadata.
+Some fields are modifiable f. ex. name, description, owner group, assigned permissions. Other fields are fixed like owner user or creation date.
 In the lower area of this frame three buttons provide important actions:
 
 * Create project : Generates a project in the current path using the values in the form
-* Modify : Replaces stored values for the selected element with values in the form 
+* Modify : Replaces stored values for the selected element with values in the form
 * Delete : Deletes selected  element.
 
 ![Item details frame with operation buttons](/images/CreateItemDetailsForm.png)

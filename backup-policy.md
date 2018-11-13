@@ -1,5 +1,5 @@
 ##Define backup policy
-We must backup at least ioChem-BD databases and the assetstore folders to be able to restore our system in case of data loss or corruption.   
+We must backup at least ioChem-BD databases and the assetstore folders to be able to restore our system in case of data loss or corruption.
 The first one contains all data information and relations, and the latter contain the uploaded calculation files. We can code an script and crontab it every Sunday night, for example, to backup such fields into a backup destination folder. Here is a sample script that dumps and zips such information, it is advised to crontab it:
 
 ```
@@ -23,7 +23,7 @@ gzip $BACKUP_FOLDER/dump_iochemBrowse.sql
 
 #Zip entire Create assetstore folder: $IOCHEM_FOLDER/create/assetstore
 #sufix will alternate values 0,1... each week
-sufix=$[date +%e/7%2] 
+sufix=$[date +%e/7%2]
 tar -C $IOCHEM_FOLDER/create -zcf $BACKUP_FOLDER/create_week$sufix.tar.gz assetstore
 
 #Zip entire Browse assetstore folder: $IOCHEM_FOLDER/create/assetstore
