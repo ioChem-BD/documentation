@@ -90,9 +90,9 @@ After we create the account, please keep this password safe and consider it the 
 We will now create three databases that will store ioChem-BD data:
 
 ```console
-postgres$ createdb -O iochembd "iochemCreate"
-postgres$ createdb -O iochembd "iochemCreateChemaxon"
-postgres$ createdb -O iochembd "iochemBrowse"
+postgres$ createdb -E UTF8 -O iochembd "iochemCreate"
+postgres$ createdb -E UTF8 -O iochembd "iochemCreateChemaxon"
+postgres$ createdb -E UTF8 -O iochembd "iochemBrowse"
 ```
 
 ### Run the installation script and fill in the forms
