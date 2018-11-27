@@ -377,7 +377,7 @@ We can customize which input and output files are captured setting wildcards **\
           echo "   Input file "$inputfile
           echo "   Output file "$outputfile
           cd $folder
-          loadadf --auto -i $inputfile -o $outputfile**
+          loadadf --auto -i $inputfile -o $outputfile
         fi
    done
    exit-rep
