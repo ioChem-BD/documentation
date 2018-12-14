@@ -23,7 +23,7 @@ gzip $BACKUP_FOLDER/dump_iochemBrowse.sql
 
 #Zip entire Create assetstore folder: $IOCHEM_FOLDER/create/assetstore
 #sufix will alternate values 0,1... each week
-sufix=$[date +%e/7%2]
+sufix=$[`date +%e`/7%2]
 tar -C $IOCHEM_FOLDER/create -zcf $BACKUP_FOLDER/create_week$sufix.tar.gz assetstore
 
 #Zip entire Browse assetstore folder: $IOCHEM_FOLDER/create/assetstore
