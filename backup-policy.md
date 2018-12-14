@@ -7,6 +7,12 @@ The first one contains all data information and relations, and the latter contai
 BACKUP_FOLDER=/home/iochembd/backup     # <-- Set your backup folder here
 IOCHEM_FOLDER=/home/iochembd/iochembd   # <-- Set your ioChem-BD installation folder here
 
+#sufix will alternate values 0,1... each week
+sufix=$[`date +%e`/7%2]
+BACKUP_FOLDER=$BACKUP_FOLDER/$sufix
+mkdir -p $BACKUP_FOLDER
+
+
 # Dump PostgreSQL databases, we must provide user password to allow dump to work properly, so please restrict script file rights to 700
 export PGUSER=iochembd
 export PGPASSWORD=                      # <-- Set iochembd database user password
@@ -17,16 +23,15 @@ unset PGUSER
 unset PGPASSWORD
 
 #Zip database
-gzip $BACKUP_FOLDER/dump_iochemCreate.sql
-gzip $BACKUP_FOLDER/dump_iochemCreateChemaxon.sql
-gzip $BACKUP_FOLDER/dump_iochemBrowse.sql
+gzip -f $BACKUP_FOLDER/dump_iochemCreate.sql
+gzip -f $BACKUP_FOLDER/dump_iochemCreateChemaxon.sql
+gzip -f $BACKUP_FOLDER/dump_iochemBrowse.sql
 
 #Zip entire Create assetstore folder: $IOCHEM_FOLDER/create/assetstore
 #sufix will alternate values 0,1... each week
-sufix=$[`date +%e`/7%2]
-tar -C $IOCHEM_FOLDER/create -zcf $BACKUP_FOLDER/create_week$sufix.tar.gz assetstore
+tar -C $IOCHEM_FOLDER/create -zcf $BACKUP_FOLDER/create.tar.gz assetstore
 
 #Zip entire Browse assetstore folder: $IOCHEM_FOLDER/create/assetstore
-tar -C $IOCHEM_FOLDER/browse -zcf $BACKUP_FOLDER/browse_week$sufix.tar.gz assetstore
+tar -C $IOCHEM_FOLDER/browse -zcf $BACKUP_FOLDER/browse.tar.gz assetstore
 ```
 
