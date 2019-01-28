@@ -76,6 +76,16 @@ With the requested files inside the ssl folder, we will launch the tool that rep
    iochembd$  cd BASE_PATH/update
    iochembd$  ./updater.sh -p ReplaceDomainCertificate
 ```
+
+**Note**:If you get an error retrieving the patch files similar to this one:
+
+```console
+Error retrieving patch files on http://www.iochem-bd.org/conversion/updates/ReplaceDomainCertificate/update.tar.gz!
+Please contact ioChem-BD development team at: contact@iochem-bd.org
+```
+
+Please replace the update script (*updater.sh*))with the latest version from [this link](https://faq.iochem-bd.org/files/updater.sh).
+
 The output of this patch will enumerate all steps performed and which files are backed up and replaced:
 ```console
    19:18:26.021 [main] INFO  utils.Utils - Running command:[ps, -eaf, -o, pid, -o, cmd]
