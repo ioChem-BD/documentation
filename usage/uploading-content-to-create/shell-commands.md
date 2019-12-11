@@ -249,7 +249,7 @@ To ease the usage of this command we have developed a group of helper Linux scri
 
 | Script                     | Function |
 |----------------------------|----------|
-| [loadadf](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgauss) | Upload **ADF** calculation             |
+| [loadadf](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgadf) | Upload **ADF** calculation             |
 | [loadgauss](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadgauss) | Upload **Gaussian** calculation |
 | [loadturbo](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadturbo) | Upload **Turbomole** calculation|
 | [loadvasp](/usage/uploading-content-to-create/using-shell-client/shell-automated-scripts.md#loadvasp)   | Upload **Vasp** calculations (Nudge Elastic Band and Dimmer are also included) |
