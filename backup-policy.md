@@ -27,7 +27,7 @@ gzip -f $BACKUP_FOLDER/dump_iochemCreate.sql
 gzip -f $BACKUP_FOLDER/dump_iochemCreateChemaxon.sql
 gzip -f $BACKUP_FOLDER/dump_iochemBrowse.sql
 
-#Zip entire ioChem-BD  folde
+#Zip entire ioChem-BD folder
 tar -zcvf $BACKUP_FOLDER/iochembd.tar.gz $IOCHEM_FOLDER
 ```
 
