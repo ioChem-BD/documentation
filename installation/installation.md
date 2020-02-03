@@ -19,26 +19,33 @@ We can use any other non privileged system user or username to install or run th
 
 ### Unzip application package
 
-To start ioChem-BD installation, we will first download and gunzip the software package in the _iochembd_ user home.
+To start ioChem-BD installation, we will first [download](https://gitlab.com/ioChem-BD/iochem-bd/-/releases) and extract the software package in the _iochembd_ user home.
 
 ```console
    iochembd$ cd ~
-   iochembd$ tar -xvf iochembd_nochem_v10.tar.gz
+   iochembd$ tar -xvf iochembd-binary-X.X.X.tar.gz
 ```
 
 All the software is contained inside the single folder you just decompressed, with the following structure:
 
 ```console
     iochembd
-    ├── apache-tomcat-7.0.37
+    ├── apache-tomcat
     ├── browse
+    ├── cas
+    ├── COPYING
     ├── create
     ├── init-script
     ├── init.sh
     ├── installer.jar
-    ├── jdk1.7.0_55
+    ├── postinstall.sh
+    ├── README.md
+    ├── ssl
+    ├── third-party
+    ├── THIRD-PARTY.txt
     ├── updates
-    └── webapps
+    ├── webapps
+    └── webapps2
 ```
 
 We can place it anywhere in our filesystem: one good candidates is _iochembd_ user home, another one is inside _/opt_ folder. From now on we will talk about _BASE\_PATH_ when we refer to the path of this folder.
@@ -66,7 +73,6 @@ Now we will configure PostgreSQL authentication file to allow login with passwor
     # TYPE DATABASE USER ADDRESS METHOD
     # IPv4 local connections:
     host iochemCreate iochembd 127.0.0.1/32 md5
-    host iochemCreateChemaxon iochembd 127.0.0.1/32 md5
     host iochemBrowse iochembd 127.0.0.1/32 md5
 ```
 
@@ -91,7 +97,6 @@ We will now create three databases that will store ioChem-BD data:
 
 ```console
 postgres$ createdb -E UTF8 --locale='en_US.utf8' -T template0 -O iochembd "iochemCreate"
-postgres$ createdb -E UTF8 --locale='en_US.utf8' -T template0 -O iochembd "iochemCreateChemaxon"
 postgres$ createdb -E UTF8 --locale='en_US.utf8' -T template0 -O iochembd "iochemBrowse"
 ```
 
@@ -154,11 +159,6 @@ root# zypper install libcap-progs
 root# BASEPATH/postinstall.sh
 ```
 
-### Copy a valid license file to the installation folder
-
-Create module requires a license file to run. It is distributed separately and it is named **license.out**. So before starting our web service we will copy this file into _BASE\_PATH_/create folder.
-Now we are ready to call the startup script file and start the ioChem-BD service.
-
 ### Edit /etc/hosts
 
 You must add an entry on /etc/hosts to avoid ioChem-BD web services to go outside your network to find your domain, so you must enter the following line on /etc/hosts,
@@ -171,10 +171,10 @@ You must add an entry on /etc/hosts to avoid ioChem-BD web services to go outsid
 
 The files responsible for managing our web service are:
 
-* _BASE\_PATH_/apache-tomcat-7.0.37/bin/startup.sh to start service
-* _BASE\_PATH_/apache-tomcat-7.0.37/bin/shutdown.sh to stop service
+  * _BASE\_PATH_/apache-tomcat/bin/startup.sh to start service
+  * _BASE\_PATH_/apache-tomcat/bin/shutdown.sh to stop service
 
-After starting the web server you can track _BASE\_PATH_/apache-tomcat-7.0.37/logs/catalina.out file to look for start-up errors. If they appear, please [contact us](mailto:contact@iochem-bd.org) in order to assist you as soon as possible.
+After starting the web server you can track _BASE\_PATH_/apache-tomcat/logs/catalina.out file to look for start-up errors. If they appear, please [contact us](mailto:contact@iochem-bd.org) in order to assist you as soon as possible.
 
 ## Access ioChem-BD main page
 

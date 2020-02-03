@@ -4,7 +4,6 @@ The Browse module content is publicly accessible by anonymous users, the Create 
  * [Creating users](#creating-users)
  * [Creating groups](#creating-groups)
 
-
 ##Administrator login
 The next steps will be performed on the Browse module and from an administrator account, the same that we would have defined during installation.
 First, we will login by clicking on upper right menu bar "Sign on to" -&gt; "Browse module" button.
@@ -22,9 +21,28 @@ On the options on upper right menu bar we will click on **Administer**.
 ![Admin administer](/images/Admin_administer.png)
 
 The menu bar will change to administrator mode and more options will be accessible. When clicking on *Access control*, three options will be displayed, we will use these two:
-* E-People : To create, modify and delete ioChem-BD users
 * Groups: To build groups of users.
+* E-People : To create, modify and delete ioChem-BD users
 
+>Note: Prior creating users, it is advised to [create the user groups](#creating-groups) and the [publication endpoints]((/installation/publishing-endpoints-definition.md)), those information will be used during user creation.
+
+> Otherwise you can use [Batch generation using .csv format](batch-generation-using-csv-format) procedure to create all of them in one single operation.
+
+##Creating groups
+User groups are logical associations of users, we can gather them by research group, team leader, or even create a default group with all users inside it.
+
+Users can belong to multiple groups, but in this case they must also have a default main group defined.
+
+To create a group, click on *Access control* and then on *Groups* menu button. On the next form we will click on *Create group*.
+
+![Admin create group form](/images/Admin_creategroup.png) On the next form we will:
+
+* set group name
+* assign users to group (we can do this at any time later)
+
+then click on **Update group** button, the group will be created.
+
+![Admin assign group users form](/images/Admin_creategroup2.png)
 
 ##Creating users
 
@@ -108,23 +126,6 @@ This is an example of a user account creation:
 ![Admin create user](/images/Admin_createuser2.png)
 
 Finally we click on the **Reset password**' button, the user will then be saved in the database and a reset password link will be sent to the user's e-mail.
-
-##Creating groups
-User groups are logical associations of users, we can gather them by research group, team leader, or even create a default group with all users inside it.
-
-Users can belong to multiple groups, but in this case they must also have a default main group defined.
-
-To create a group, click on *Access control* and then on *Groups* menu button. On the next form we will click on *Create group*.
-
-![Admin create group form](/images/Admin_creategroup.png) On the next form we will:
-
-* set group name
-* assign users to group (we can do this at any time later)
-
-then click on **Update group** button, the group will be created.
-
-![Admin assign group users form](/images/Admin_creategroup2.png)
-
 
 ------------------------------------------------------------------------
 The last step in our system configuration is defining endpoints on the Browse module where users can publish their calculations. Refer to [Publishing endpoints definition](/installation/publishing-endpoints-definition.md) page.

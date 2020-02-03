@@ -78,9 +78,13 @@ The hierarchy inside Browse is really up to administrator's choice and needs. He
 ###Community generation
 Once we know how Browse will be structured we will start by creating the top community/ies.
 As administrator we will click **Browse** &gt; **Communities and collections** on the upper menubar option.
+
 ![Communities and collections menu option](/images/Admin_communities_and_collections.png)
+
 On the next page we will click on the *Create top level community* button.
+
 ![Admin add new top community page](/images/Admin_addtopcommunity.png)
+
 From the next form we must fill in the mandatory *Community name* textbox. We can also attach an image describing the community or append more info on the Description text field. ![Admin community add form](/images/Admin_addtopcommunity2.png)
 Once this is done we will click on the **Create** button, and our community will be created
 
@@ -94,21 +98,31 @@ From the right sidebar we will choose *Create Sub-community* option and follow t
 ![Community options panel](/images/Admin_addsubcommunity.png)
 
 <span id="community_publishers"></span>
-###Assign community publishers
+### Assign community publishers
+
 Once our publication structure has been defined, our last step as administrator is to define who will publish and where he/she will publish
-To assign publication rights to a community we must define its administrators.
+To assign publication rights to a community we must define its administrators, it can be done in two ways.
+
+#### 1.Adding users as community administrators
 
 > Note: the ioChem-BD system administrator account has higher levels of administrator than simple users managing their publishing community. So the system admin will be able to remove published collections and items, whereas other users will not.
 
 We will first navigate to the desired community, in this example this will be a specific user community. From the sidebar we will click on the *Edit* button.
+
 ![Edit community sidebar](/images/Admin_addcommunityadmin.png)
+
 From next form we will click on *Create* administrator button on the right sidebar. ![Community permissions toolbar](/images/Admin_addcommunityadmin2.png)
 In the new form we will choose which users or groups of users are allowed to publish inside this specific community.
 In this demo case we are working with a user community so we will add this only user as administrator. If we are working with a group community with no users, as described in the fourth example, we can add a users' group (right panel) instead of a list of single users (left panel).
+
 ![Set community administrators](/images/Admin_addcommunityadmin3.png)
+
 We will do so for every user / group of users that we want to be able to publish, otherwise users will not be able to publish in the Browse module.
 
-###Resume
+#### 2. Using user edit form
+
+
+### Resume
 Adding new users to ioChem-BD will require:
   1. [Create the user](/installation/user-and-group-generation.md#creating-users), associate it to (at least) a user group and
   2. [Create a community](#publishing-endpoints-definition) where the user will publish or associate that user into a user group that already have publishing communities associated.
