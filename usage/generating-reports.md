@@ -28,7 +28,9 @@ A single click on the *Generate* button will create the report and start its dow
 ###Adding calculations to report
 To add new calculations to an existing report, users have to select a group of calculations on the Navigation tab first.
 To select calculations we will follow the same steps as we described in [calculation publishing mechanism](/usage/publishing-calculations.md#publication-steps).
+
 Once our projects/calculations are selected, we will click again on our report and then click on the *Add selected calculations* button. Previously selected elements will now populate the report list.
+
 Another easy method to generate a report is to make a selection on *Navigation Frame* and then right click on it. From the contextual menu that will appear, we will select the *Supporting information* option, then a new report will be generated and all selected calculations will be included in it.
  
 ![Creating reports based on calculation selection](/images/CreateReportsNew2.png "wikilink")
