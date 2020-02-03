@@ -26,7 +26,7 @@ A dialog box will appear asking for our account password:
 
 ![Credential validation](/images/CreatePublishCredentials.png)
 
-If an error message appears at this point, please read the FAQ entry about [no publishing community defined](/FAQ#nopublishingcommunity).
+If an error message appears at this point, please read the FAQ entry about [no publishing community defined](https://faq.iochem-bd.org/general/create-publish-error.html).
 
 A new form will be presented, showing all end points available on the Browse module.
 
