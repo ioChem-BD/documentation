@@ -92,7 +92,9 @@ Once this is done we will click on the **Create** button, and our community will
 ### Subcommunity generation
 
 Depending on the needed hierarchy, you will have to generate new subcommunities inside your top communities.
+
 As administrators, we will navigate to the base community via **Browse &gt; Communities and collections**, then click on the desired community.
+
 From the right sidebar we will choose *Create Sub-community* option and follow the same steps as when we create a top community.
 
 ![Community options panel](/images/Admin_addsubcommunity.png)
@@ -101,6 +103,7 @@ From the right sidebar we will choose *Create Sub-community* option and follow t
 ### Assign community publishers
 
 Once our publication structure has been defined, our last step as administrator is to define who will publish and where he/she will publish
+
 To assign publication rights to a community we must define its administrators, it can be done in two ways.
 
 #### 1.Adding users as community administrators
@@ -111,15 +114,23 @@ We will first navigate to the desired community, in this example this will be a 
 
 ![Edit community sidebar](/images/Admin_addcommunityadmin.png)
 
-From next form we will click on *Create* administrator button on the right sidebar. ![Community permissions toolbar](/images/Admin_addcommunityadmin2.png)
+From next form we will click on *Create* administrator button on the right sidebar. 
+
+![Community permissions toolbar](/images/Admin_addcommunityadmin2.png)
+
 In the new form we will choose which users or groups of users are allowed to publish inside this specific community.
+
 In this demo case we are working with a user community so we will add this only user as administrator. If we are working with a group community with no users, as described in the fourth example, we can add a users' group (right panel) instead of a list of single users (left panel).
 
 ![Set community administrators](/images/Admin_addcommunityadmin3.png)
 
 We will do so for every user / group of users that we want to be able to publish, otherwise users will not be able to publish in the Browse module.
 
-#### 2. Using user edit form
+#### 2. Adding the community on *User edition* form
+
+We will first navigate to *Administer* then *Access control* and *E-People*. It will open *Administer EPeople* page. 
+
+Then we will search and edit the specific user with the *Edit* button. On the edition form, you can choose the communities where the user will be allowed to publish by selecting it on the listbox named *Communities user can publish into*.
 
 
 ### Resume
