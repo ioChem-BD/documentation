@@ -79,7 +79,7 @@ Published projects and subprojects will also have an additional black tick that 
 ![](/images/EditPublishedElement.png) This page allows to:
    * Change published collection name
    * Set related article information
-   * [Lift embargo](/usage/publishing-calculations/embargo.md#lifting-the-embargo)
+   * [Lift embargo](/publishing-calculations/embargo.md#lifting-the-embargo)
    * Copy reviewers link
 
 On the  page that shows, the first section allows to change title, subtitle and description of the published collection:

@@ -126,11 +126,14 @@ In this demo case we are working with a user community so we will add this only 
 
 We will do so for every user / group of users that we want to be able to publish, otherwise users will not be able to publish in the Browse module.
 
-#### 2. Adding the community on *User edition* form
+#### 2. Adding the community on user's edition form
 
-We will first navigate to *Administer* then *Access control* and *E-People*. It will open *Administer EPeople* page. 
+On the top bar we will navigate to the *Administer* option, then *Access control* and finally *E-People*, it will open *Administer EPeople* page. 
 
-Then we will search and edit the specific user with the *Edit* button. On the edition form, you can choose the communities where the user will be allowed to publish by selecting it on the listbox named *Communities user can publish into*.
+From here, we will search and edit the specific user by clicking the *Edit* button. On the edition form, you can choose the communities where the user will be allowed to publish by selecting it on the listbox named *Communities user can publish into*.
+
+![Set user publishing communities](/images/Admin_addcommunityadmin4.png)
+
 
 
 ### Resume
