@@ -121,9 +121,9 @@ Once we have the certificate .zip file we will extract its contents into the BAS
 
 After the extraction you must have on *BASE_PATH*/create/ssl folder at least the following files:
 
-   * A keystore.jks file with your private key
-   * A \*.crt file with your public key certificate in X509 PEM format
-   * An optional \*.ca-bundle with the intermediate CA certificates in X509 PEM format
+   - A *certificate.key* file with your private key
+   - A *\*.crt* file with your public key certificate in X509 PEM format
+   - An optional *\*.bundle* with the intermediate CA certificates in X509 PEM format
 
 With the following command you can extract.
 
