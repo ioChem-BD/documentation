@@ -38,10 +38,10 @@ State or Province Name (full name) []:     Tarragona
 Locality Name (eg, city) [Default City]:    Tarragona
 Organization Name (eg, company) [Default Company Ltd]:     Institution of Chemical Research of Catalonia
 Organizational Unit Name (eg, section) []:     Theoretical Group
-Common Name (eg, your name or your server's hostname) []:    iochem-bd.iciq.es 
+Common Name (eg, your name or your servers hostname) []:    iochem-bd.iciq.es 
 Email Address []:    contact@example.com
 
-Please enter the following 'extra' attributes to be sent with your certificate request
+Please enter the following extra attributes to be sent with your certificate request
 
 # Leave following fields empty
 
@@ -52,8 +52,8 @@ An optional company name []:
 
 ### Purchasing the certificate
 
-At this point, on BASE_PATH/create/ssl folder there will be new:
-  - a file called *request.csr* , that is the certificate request file that we will send to the CA. 
+At this point, on BASE_PATH/create/ssl folder there will be:
+  - a file called *request.csr* , that is the certificate request file that we will send to the CA and 
   - a file called  *certificate.key* with the private key of the custom generated certificate.
 
 We must now contact the CA to request the public certificate.
