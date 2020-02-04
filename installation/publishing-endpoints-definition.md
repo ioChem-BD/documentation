@@ -132,8 +132,7 @@ On the top bar we will navigate to the *Administer* option, then *Access control
 
 From here, we will search and edit the specific user by clicking the *Edit* button. On the edition form, you can choose the communities where the user will be allowed to publish by selecting it on the listbox named *Communities user can publish into*.
 
-![Set user publishing communities](/images/Admin_addcommunityadmin4.png)
-
+![Set user publishing communities](/images/Admin_createuser4.png)
 
 
 ### Resume
